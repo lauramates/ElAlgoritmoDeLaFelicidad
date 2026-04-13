@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>5.Distribuciones bidimensionales </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1.3 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={previous:"Anterior",next:"Siguiente",show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú",download:"Descargar",print:"Imprimir"}</script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+<body class="exe-web-site" id="exe-node-25"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Estadística</a></li>
+   <li><a href="1conceptos_elementales_de_estadstica.html" class="daddy">1.Conceptos elementales de estadística.</a>
+   <ul class="other-section">
+      <li><a href="muestreo.html" class="no-ch">Muestreo</a></li>
+      <li><a href="tipos_de_variables.html" class="no-ch">Tipos de variables</a></li>
+      <li><a href="tablas_de_frecuencia.html" class="no-ch">Tablas de frecuencia</a></li>
+      <li><a href="cuestionario.html" class="no-ch">Cuestionario</a></li>
+      <li><a href="actividades.html" class="daddy">Actividades</a>
+      <ul class="other-section">
+         <li><a href="solucin_actividad_1.html" class="no-ch">Solución actividad 1</a></li>
+         <li><a href="solucin_actividad_2.html" class="no-ch">Solución actividad 2</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="2grficos_estadsticos.html" class="daddy">2.Gráficos estadísticos</a>
+   <ul class="other-section">
+      <li><a href="diagrama_de_barras.html" class="no-ch">Diagrama de barras</a></li>
+      <li><a href="histograma.html" class="no-ch">Histograma</a></li>
+      <li><a href="diagrama_de_sectores.html" class="no-ch">Diagrama de sectores</a></li>
+   </ul>
+   </li>
+   <li><a href="3medidas_de_centralizacin_y_posicin.html" class="daddy">3.Medidas de centralización y posición</a>
+   <ul class="other-section">
+      <li><a href="moda.html" class="no-ch">Moda</a></li>
+      <li><a href="media.html" class="no-ch">Media</a></li>
+      <li><a href="mediana.html" class="no-ch">Mediana</a></li>
+      <li><a href="cuartiles_deciles_y_percentiles.html" class="no-ch">Cuartiles, Deciles y Percentiles</a></li>
+      <li><a href="repaso.html" class="no-ch">Repaso</a></li>
+   </ul>
+   </li>
+   <li><a href="4medidas_de_dispersin.html" class="daddy">4.Medidas de dispersión</a>
+   <ul class="other-section">
+      <li><a href="recorrido_o_rango.html" class="no-ch">Recorrido o Rango</a></li>
+      <li><a href="varianza_y_desviacin_tpica.html" class="no-ch">Varianza y Desviación típica</a></li>
+      <li><a href="coeficiente_de_variacin.html" class="no-ch">Coeficiente de Variación</a></li>
+      <li><a href="intepretaciones_conjunta_de_la_media_y_la_desviacin_tpica.html" class="no-ch">Intepretaciones conjunta de la media y la desviación típica</a></li>
+   </ul>
+   </li>
+   <li id="active"><a href="5distribuciones_bidimensionales.html" class="active daddy">5.Distribuciones bidimensionales</a>
+   <ul>
+      <li><a href="correlacin_lineal.html" class="no-ch">Correlación lineal</a></li>
+      <li><a href="tablas_de_contingencia.html" class="no-ch">Tablas de contingencia</a></li>
+   </ul>
+   </li>
+   <li><a href="6covarianza_y_coeficiente_de_correlacin_lineal.html" class="daddy">6.Covarianza y coeficiente de correlación lineal</a>
+   <ul class="other-section">
+      <li><a href="centro_de_gravedad.html" class="no-ch">Centro de gravedad</a></li>
+      <li><a href="covarianza.html" class="no-ch">Covarianza</a></li>
+      <li><a href="coeficiente_de_correlacin_lineal.html" class="no-ch">Coeficiente de correlación lineal</a></li>
+      <li><a href="actividades0.html" class="no-ch">Actividades</a></li>
+      <li><a href="repaso0.html" class="no-ch">Repaso</a></li>
+   </ul>
+   </li>
+   <li><a href="7_recta_de_regresin_lineal.html" class="daddy">7. Recta de regresión lineal</a>
+   <ul class="other-section">
+      <li><a href="actividades1.html" class="daddy">Actividades</a>
+      <ul class="other-section">
+         <li><a href="solucin_actividad_10.html" class="no-ch">Solución actividad 1</a></li>
+         <li><a href="solucin_actividad_20.html" class="no-ch">Solución actividad 2</a></li>
+         <li><a href="solucin_actividad_3.html" class="no-ch">Solución actividad 3</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="intepretaciones_conjunta_de_la_media_y_la_desviacin_tpica.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="correlacin_lineal.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">5.Distribuciones bidimensionales</h1></header>
+<article class="iDevice_wrapper objectivesIdevice em_iDevice" id="id146">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Introducción</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta146_44_2" class="block iDevice_content">
+<p><span style="font-size: 12pt;">Hemos estudiado el análisis de una característica de los individuos de una población, pero... ¿podremos analizar más de una característica?</span></p>
+<p>                         <img src="3084d093f74becb38601c4690cd0e212.jpg" width="68" height="80" alt="Foto" title="Foto?" /></p>
+<p><span style="font-size: 12pt;">La respuesta es...<strong>¡sí!</strong>, así que vamos a verlo.</span></p>
+<p></p>
+<p><span style="font-size: 12pt;">Por ejemplo, supongamos que realizamos en clase un estudio de los alumnos que son niños o niñas y por otro lado aquellos que tienen o no gafas. Pero más fácil sería realizar dicho estudio de manera conjunta, es decir, estudiaremos el sexo y la posesión de gafas en una misma distribución.</span></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper objectivesIdevice em_iDevice" id="id147">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Definición</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta147_45_2" class="block iDevice_content">
+<p><span style="font-size: 12pt;">Una <strong>distribución bidimensional</strong>, es aquella a la que cada individuo de una población se le asignan dos valores, uno de cada variable o característica.</span></p>
+<p></p>
+<p><span style="font-size: 12pt;">Una <strong>variable estadística bidimensional</strong> <strong>(X,Y)</strong>,<strong> </strong>representa los pares de valores asociados a cada individuo.<strong> </strong></span></p>
+<p><span style="font-size: 12pt;"><strong></strong></span></p>
+<p><span style="font-size: 12pt;">Denominaremos <strong>diagrama de dispersión</strong> o <strong>nube de puntos </strong>al gráfico que se obtiene de representar las coordenadas de un punto (x,y) en el plano.</span></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper TrueFalseIdevice em_iDevice" id="id148">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Pregunta Verdadero-Falso</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta148_101" class="block iDevice_content">
+<p><span style="font-size: 12pt;">¿Preparado?, veamos que has aprendido</span></p>
+</div>
+<section class="question">
+<form name="true-false-form-0b148" action="#" class="activity-form">
+<h1 class="js-sr-av">Pregunta 1</h1>
+<div id="taquestion0b148" class="block iDevice_content">
+<p><span style="font-size: 12pt;">Las características de una distribución bidimensional pertenecen a poblaciones distintas</span></p>
+</div>
+<p class="iDevice_answer js-required">
+<label for="true0b148"><input type="radio" name="option0b148" id="true0b148" onclick="$exe.getFeedback(0,2,'0b148','truefalse')" /> Verdadero</label> 
+<label for="false0b148"><input type="radio" name="option0b148" id="false0b148" onclick="$exe.getFeedback(1,2,'0b148','truefalse')" /> Falso</label>
+</p>
+</form>
+<section id="s0b148" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p><strong id="s0b148-result" class="wrong">Falso</strong></p>
+<p><span style="font-size: 12pt;"><strong><span style="color: #ff0000;">Recuerda</span></strong>, las características que estudiaremos serán de los individuos de una <strong>misma</strong> población.</span></p>
+<p></p>
+</section>
+</section>
+<section class="question">
+<form name="true-false-form-1b148" action="#" class="activity-form">
+<h1 class="js-sr-av">Pregunta 2</h1>
+<div id="taquestion1b148" class="block iDevice_content">
+<p><span style="font-size: 12pt;">Cada individuo estará representado por un par de valores, cada uno correspondiente a una característica.</span></p>
+</div>
+<script type="text/javascript">$exe.hint.imgs=["panel-amusements.png","stock-stop.png"]</script>
+<section class="iDevice_hint">
+<h1 class="iDevice_hint_title">Sugerencia</h1>
+<div class="iDevice_hint_content js-hidden">
+<p><span style="font-size: 12pt;">Par de la forma (x,y)</span></p></div>
+</section>
+<p class="iDevice_answer js-required">
+<label for="true1b148"><input type="radio" name="option1b148" id="true1b148" onclick="$exe.getFeedback(0,2,'1b148','truefalse')" /> Verdadero</label> 
+<label for="false1b148"><input type="radio" name="option1b148" id="false1b148" onclick="$exe.getFeedback(1,2,'1b148','truefalse')" /> Falso</label>
+</p>
+</form>
+<section id="s1b148" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p><strong id="s1b148-result" class="right">Verdadero</strong></p>
+
+</section>
+</section>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper readingIdevice em_iDevice" id="id149">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ejercicio Resuelto</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta149_53_4" class="block iDevice_content">
+<p><span style="font-size: 12pt;">Las notas de ocho alumnos en un examen de Lengua y otro de Matemáticas han sido:</span></p>
+<table style="width: 426px;" height="74">
+<tbody>
+<tr>
+<td style="background-color: #51c949; text-align: center;"><span style="font-size: 12pt;"><strong><span style="font-family: arial, helvetica, sans-serif;">Alumno</span></strong></span></td>
+<td style="background-color: #51c949; text-align: center;"><span style="font-size: 12pt;"><strong>1</strong></span></td>
+<td style="background-color: #51c949; text-align: center;"><span style="font-size: 12pt;"><strong>2</strong></span></td>
+<td style="background-color: #51c949; text-align: center;"><span style="font-size: 12pt;"><strong>3</strong></span></td>
+<td style="background-color: #51c949; text-align: center;"><span style="font-size: 12pt;"><strong>4</strong></span></td>
+<td style="background-color: #51c949; text-align: center;"><span style="font-size: 12pt;"><strong>5</strong></span></td>
+<td style="background-color: #51c949; text-align: center;"><span style="font-size: 12pt;"><strong>6</strong></span></td>
+<td style="background-color: #51c949; text-align: center;"><span style="font-size: 12pt;"><strong>7</strong></span></td>
+<td style="background-color: #51c949; text-align: center;"><span style="font-size: 12pt;"><strong>8</strong></span></td>
+</tr>
+<tr>
+<td style="background-color: #51c949; text-align: center;"><span style="font-size: 12pt;"><strong><span style="font-family: arial, helvetica, sans-serif;">Lengua</span></strong></span></td>
+<td style="background-color: #63f558; text-align: center;"><span style="font-size: 12pt;">2</span></td>
+<td style="background-color: #63f558; text-align: center;"><span style="font-size: 12pt;">4</span></td>
+<td style="background-color: #63f558; text-align: center;"><span style="font-size: 12pt;">4</span></td>
+<td style="background-color: #63f558; text-align: center;"><span style="font-size: 12pt;">5</span></td>
+<td style="background-color: #63f558; text-align: center;"><span style="font-size: 12pt;">5</span></td>
+<td style="background-color: #63f558; text-align: center;"><span style="font-size: 12pt;">6</span></td>
+<td style="background-color: #63f558; text-align: center;"><span style="font-size: 12pt;">7</span></td>
+<td style="background-color: #63f558; text-align: center;"><span style="font-size: 12pt;">8</span></td>
+</tr>
+<tr>
+<td style="background-color: #51c949; text-align: center;"><span style="font-size: 12pt;"><strong><span style="font-family: arial, helvetica, sans-serif;">Matemáticas</span></strong></span></td>
+<td style="background-color: #63f558; text-align: center;"><span style="font-size: 12pt;">3</span></td>
+<td style="background-color: #63f558; text-align: center;"><span style="font-size: 12pt;">5</span></td>
+<td style="background-color: #63f558; text-align: center;"><span style="font-size: 12pt;">4</span></td>
+<td style="background-color: #63f558; text-align: center;"><span style="font-size: 12pt;">4</span></td>
+<td style="background-color: #63f558; text-align: center;"><span style="font-size: 12pt;">7</span></td>
+<td style="background-color: #63f558; text-align: center;"><span style="font-size: 12pt;">7</span></td>
+<td style="background-color: #63f558; text-align: center;"><span style="font-size: 12pt;">5</span></td>
+<td style="background-color: #63f558; text-align: center;"><span style="font-size: 12pt;">9</span></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+</section>
+<section id="ta149_53_5" class="block iDevice_content">
+
+</section>
+<form name="feedback-form-149_53_6" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedback149_53_6text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-149_53_6" value="Mostrar retroalimentación" class="feedbackbutton" onclick="$exe.toggleFeedback(this,true);return false" /></p>
+</div>
+<section id="feedback-149_53_6" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p><span style="font-size: 12pt;">Si X es la nota de Lengua e Y es la nota de Matemáticas, la variable bidimensional (X,Y) toma los valores asociados a cada alumno: {(2,3),(4,5),(4,4),(5,4),(5,7),(6,7),(7,5),(8,9)}</span></p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="intepretaciones_conjunta_de_la_media_y_la_desviacin_tpica.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="correlacin_lineal.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter"><script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script></footer></div>
+<script type="text/javascript" src="_silver_js.js"></script></body></html>

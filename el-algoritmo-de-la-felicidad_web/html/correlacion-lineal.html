@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mnwvomfi-0l1arrq3l">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0-rc1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>Correlación lineal</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mnwvomfi-0l1arrq3l" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node daddy">Estadística</a>
+<ul class="other-section">
+<li> <a href="../html/mision-00.html" class="no-ch">Misión #00</a>
+</li>
+<li> <a href="../html/mision-01.html" class="no-ch">Misión #01</a>
+</li>
+<li> <a href="../html/mision-02.html" class="no-ch">Misión #02</a>
+</li>
+<li> <a href="../html/mision-03-conceptos-elementales-de-estadistica.html" class="daddy">Misión #03: Conceptos elementales de estadística.</a>
+<ul class="other-section">
+<li> <a href="../html/muestreo.html" class="no-ch">Muestreo</a>
+</li>
+<li> <a href="../html/tipos-de-variables.html" class="no-ch">Tipos de variables</a>
+</li>
+<li> <a href="../html/tablas-de-frecuencia.html" class="no-ch">Tablas de frecuencia</a>
+</li>
+<li> <a href="../html/mision-04.html" class="no-ch">Misión #04</a>
+</li>
+<li> <a href="../html/mision-05.html" class="no-ch">Misión #05</a>
+</li>
+<li> <a href="../html/mision-06.html" class="no-ch">Misión #06</a>
+</li>
+<li> <a href="../html/mision-07.html" class="no-ch">Misión #07</a>
+</li>
+<li> <a href="../html/mision-08.html" class="no-ch">Misión #08</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/mision-09-parametros-estadisticos.html" class="daddy">Misión #09: Parámetros estadísticos</a>
+<ul class="other-section">
+<li> <a href="../html/media.html" class="no-ch">Media</a>
+</li>
+<li> <a href="../html/varianza-y-desviacion-tipica.html" class="no-ch">Varianza y Desviación típica</a>
+</li>
+<li> <a href="../html/coeficiente-de-variacion.html" class="no-ch">Coeficiente de Variación</a>
+</li>
+<li> <a href="../html/mision-10.html" class="no-ch">Misión #10</a>
+</li>
+<li> <a href="../html/mision-11.html" class="no-ch">Misión #11</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/mision-12-parametros-de-posicion-de-datos.html" class="daddy">Misión #12: Parámetros de posición de datos</a>
+<ul class="other-section">
+<li> <a href="../html/mediana.html" class="no-ch">Mediana</a>
+</li>
+<li> <a href="../html/cuartiles.html" class="no-ch">Cuartiles</a>
+</li>
+<li> <a href="../html/percentiles.html" class="no-ch">Percentiles</a>
+</li>
+<li> <a href="../html/mision-13.html" class="no-ch">Misión #13</a>
+</li>
+<li> <a href="../html/mision-14.html" class="no-ch">Misión #14</a>
+</li>
+<li> <a href="../html/mision-121-otros-parametros-de-posicion-de-datos-a.html" class="daddy">Misión #12.1  Otros parámetros de posición de datos agrupados</a>
+<ul class="other-section">
+<li> <a href="../html/poligono-de-frecuencias-acumuladas.html" class="no-ch">Polígono de frecuencias acumuladas</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li> <a href="../html/mision-15-graficos-estadisticos.html" class="daddy">Misión #15: Gráficos estadísticos</a>
+<ul class="other-section">
+<li> <a href="../html/diagrama-de-barras.html" class="no-ch">Diagrama de barras</a>
+</li>
+<li> <a href="../html/histograma.html" class="no-ch">Histograma</a>
+</li>
+<li> <a href="../html/diagrama-de-sectores.html" class="no-ch">Diagrama de sectores</a>
+</li>
+<li> <a href="../html/diagrama-de-cajas-y-bigotes.html" class="no-ch">Diagrama de cajas y bigotes</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/mision-16.html" class="no-ch">Misión #16</a>
+</li>
+<li> <a href="../html/mision-17.html" class="no-ch">Misión #17</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/estadistica-bidimensional.html" class="daddy">Estadística bidimensional</a>
+<ul class="other-section">
+<li class="active"> <a href="../html/correlacion-lineal.html" class="active no-ch">Correlación lineal</a>
+</li>
+<li> <a href="../html/parametros-asociados.html" class="daddy">Parámetros asociados</a>
+<ul class="other-section">
+<li> <a href="../html/centro-de-gravedad.html" class="no-ch">Centro de gravedad</a>
+</li>
+<li> <a href="../html/covarianza.html" class="no-ch">Covarianza</a>
+</li>
+<li> <a href="../html/coeficiente-de-correlacion-lineal.html" class="no-ch">Coeficiente de correlación lineal</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/recta-de-regresion-lineal.html" class="daddy">Recta de regresión lineal</a>
+<ul class="other-section">
+<li> <a href="../html/hay-dos-rectas-de-regresion.html" class="no-ch">Hay dos rectas de regresión</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/tablas-de-contingencia.html" class="no-ch">Tablas de contingencia</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/guia-didactica.html" class="daddy">Guía didáctica</a>
+<ul class="other-section">
+<li> <a href="../html/1-justificacion.html" class="no-ch">1. Justificación</a>
+</li>
+<li> <a href="../html/2-referencia-a-las-competencias-clave.html" class="no-ch">2. Referencia a las competencias clave</a>
+</li>
+<li> <a href="../html/3-referencia-curricular.html" class="no-ch">3. Referencia curricular</a>
+</li>
+<li> <a href="../html/4-guia-de-uso-para-el-aula.html" class="no-ch">4. Guía de uso para el aula</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-mnwvomfi-0l1arrq3l" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">El algoritmo de la felicidad</p>
+<p class="package-subtitle">Redes sociales vs Horas de sueño</p></div>
+<div class="page-header"><h1 class="page-title">Correlación lineal</h1></div>
+</header><div id="page-content-page-mnwvomfi-0l1arrq3l" class="page-content">
+<article id="block-mmufljn9-quqy3fur2" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/objectives.png" alt="">
+</div>
+<h1 class="box-title">Introducción</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mmufljn9-qu47xzxkw" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mmufljn9-qu47xzxkw&quot;}">
+<div class="exe-text-template">
+    <p><br /></p>
+<p><img src="../content/resources/ChatGPT Image 18 mar 2026, 10_08_06.png" width="1536" height="1024" alt="" /><br /></p>
+<p><span style="font-size: 12pt;"><strong><br /></strong></span></p>
+</div>
+</div>
+</div>
+</article><article id="block-mmufljn9-kaalvo72r" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/objectives.png" alt="">
+</div>
+<h1 class="box-title">Definición</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mmufljn9-v9huzft1s" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mmufljn9-v9huzft1s&quot;}">
+<div class="exe-text-template">
+    <div style="border: 2px solid #405DE6; padding: 25px; border-radius: 15px; background-color: #f8f9ff; font-family: sans-serif;">
+<h3 style="color: #405de6; margin-top: 0; font-size: 1.3em;">📈 Correlación Lineal</h3>
+<p style="font-size: 12pt;">Dadas dos variables, se dice que hay <strong>correlación lineal</strong> si los puntos de la nube se distribuyen en torno a una <strong>línea recta</strong>, llamada <strong>recta de regresión</strong>.</p>
+<div style="margin-left: 10px; margin-top: 15px;">
+<div style="margin-bottom: 20px; display: flex; align-items: flex-start;">
+<div style="background-color: #405de6; color: white; min-width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 15px;">1</div>
+<div><strong style="font-size: 12pt; color: #405de6;">Intensidad de la correlación:</strong>
+<p style="font-size: 12pt; margin-top: 5px;">Según cómo estén distribuidos los puntos:</p>
+<ul style="font-size: 12pt; margin-top: 8px;">
+<li><strong>Fuerte:</strong> los puntos están muy próximos entre sí</li>
+<li><strong>Débil:</strong> los puntos aparecen más dispersos</li>
+</ul>
+</div>
+</div>
+<div style="margin-bottom: 20px; display: flex; align-items: flex-start;">
+<div style="background-color: #405de6; color: white; min-width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 15px;">2</div>
+<div><strong style="font-size: 12pt; color: #405de6;">Tipo de correlación:</strong>
+<p style="font-size: 12pt; margin-top: 5px;">Depende del sentido de la recta de regresión:</p>
+<ul style="font-size: 12pt; margin-top: 8px;">
+<li>📈 <strong>Positiva:</strong> la pendiente es positiva (ambas variables aumentan)</li>
+<li>📉 <strong>Negativa:</strong> la pendiente es negativa (una aumenta y la otra disminuye)</li>
+</ul>
+</div>
+</div>
+</div>
+<div style="margin-top: 10px; border-top: 1px solid #A9CCE3; padding-top: 20px; display: flex; align-items: flex-start;">
+<div style="background-color: #e1306c; color: white; min-width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 15px;">!</div>
+<div><strong style="color: #e1306c; font-size: 12pt;">Importante:</strong>
+<p style="font-size: 12pt; margin-top: 5px;">La correlación indica relación entre variables, pero <strong>no implica causalidad</strong>.</p>
+</div>
+</div>
+</div>
+<p><br /></p>
+<p><img src="../content/resources/Captura de pantalla 2026-03-18 101751.png" width="798" height="386" alt="" /></p>
+</div>
+</div>
+</div>
+</article><article id="block-mmufljn9-mglhu73om" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/book.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mmufljn9-114l479pq" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mmufljn9-114l479pq&quot;}">
+<div class="exe-text-activity"><p><span style="font-size: 12pt;">Nueve amigos hacen una competición que consiste en escribir un texto y mirar el tiempo empleado en minutos y los errores cometidos.</span></p>
+<table style="width: 40.8451%;">
+<tbody>
+<tr>
+<td style="background-color: #194abd; text-align: center;"><span style="color: #ffffff; font-size: 12pt;"><strong>t(X)</strong></span></td>
+<td style="background-color: #73bcde; text-align: center;"><span style="font-size: 12pt;">2</span></td>
+<td style="background-color: #73bcde; text-align: center;"><span style="font-size: 12pt;">7</span></td>
+<td style="background-color: #73bcde; text-align: center;"><span style="font-size: 12pt;">8</span></td>
+<td style="background-color: #73bcde; text-align: center;"><span style="font-size: 12pt;">8</span></td>
+<td style="background-color: #73bcde; text-align: center;"><span style="font-size: 12pt;">9</span></td>
+<td style="background-color: #73bcde; text-align: center;"><span style="font-size: 12pt;">10</span></td>
+<td style="background-color: #73bcde; text-align: center;"><span style="font-size: 12pt;">11</span></td>
+<td style="background-color: #73bcde; text-align: center;"><span style="font-size: 12pt;">12</span></td>
+<td style="background-color: #73bcde; text-align: center;"><span style="font-size: 12pt;">14</span></td>
+</tr>
+<tr>
+<td style="background-color: #194abd; text-align: center;"><span style="color: #ffffff; font-size: 12pt;"><strong>E(Y)</strong></span></td>
+<td style="background-color: #73bcde; text-align: center;"><span style="font-size: 12pt;">24</span></td>
+<td style="background-color: #73bcde; text-align: center;"><span style="font-size: 12pt;">16</span></td>
+<td style="background-color: #73bcde; text-align: center;"><span style="font-size: 12pt;">12</span></td>
+<td style="background-color: #73bcde; text-align: center;"><span style="font-size: 12pt;">15</span></td>
+<td style="background-color: #73bcde; text-align: center;"><span style="font-size: 12pt;">18</span></td>
+<td style="background-color: #73bcde; text-align: center;"><span style="font-size: 12pt;">14</span></td>
+<td style="background-color: #73bcde; text-align: center;"><span style="font-size: 12pt;">14</span></td>
+<td style="background-color: #73bcde; text-align: center;"><span style="font-size: 12pt;">8</span></td>
+<td style="background-color: #73bcde; text-align: center;"><span style="font-size: 12pt;">2</span></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 12pt;">Dibuja la nube de puntos e indica qué tipo de correlación existe entre el tiempo y los errores cometidos.</span></p>
+<p><span style="font-size: 12pt;"><img src="../content/resources/nube.JPG" alt="nubr" width="300" height="300" title="nube" /></span></p><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación"></div><div class="feedback js-feedback js-hidden"><p><span style="font-size: 12pt;">Como los puntos se ajustan bien a una recta de pendiente negativa, la correlación es fuerte e inversa.</span></p></div></div>
+</div>
+</div>
+</article><article id="block-mmufljn9-4knz53bkv" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/activity.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio propuesto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mmufljn9-nkibq7365" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mmufljn9-nkibq7365&quot;}">
+<p><span style="font-size: 12pt;">Dada la siguiente distribución bidimensional.</span></p>
+<table style="width: 33.3004%;">
+<tbody>
+<tr>
+<td style="background-color: #e0b104; text-align: center;"><span style="font-size: 12pt;"><strong><span style="color: #000000;">X</span></strong></span></td>
+<td style="background-color: #f0db1d; text-align: center;"><span style="color: #000000; font-size: 12pt;">2</span></td>
+<td style="background-color: #f0db1d; text-align: center;"><span style="color: #000000; font-size: 12pt;">3</span></td>
+<td style="background-color: #f0db1d; text-align: center;"><span style="color: #000000; font-size: 12pt;">5</span></td>
+<td style="background-color: #f0db1d; text-align: center;"><span style="color: #000000; font-size: 12pt;">6</span></td>
+<td style="background-color: #f0db1d; text-align: center;"><span style="color: #000000; font-size: 12pt;">8</span></td>
+<td style="background-color: #f0db1d; text-align: center;"><span style="color: #000000; font-size: 12pt;">9</span></td>
+<td style="background-color: #f0db1d; text-align: center;"><span style="color: #000000; font-size: 12pt;">10</span></td>
+</tr>
+<tr>
+<td style="background-color: #e0b104; text-align: center;"><span style="font-size: 12pt;"><strong><span style="color: #000000;">Y</span></strong></span></td>
+<td style="background-color: #f0db1d; text-align: center;"><span style="color: #000000; font-size: 12pt;">4</span></td>
+<td style="background-color: #f0db1d; text-align: center;"><span style="color: #000000; font-size: 12pt;">3</span></td>
+<td style="background-color: #f0db1d; text-align: center;"><span style="color: #000000; font-size: 12pt;">6</span></td>
+<td style="background-color: #f0db1d; text-align: center;"><span style="color: #000000; font-size: 12pt;">5</span></td>
+<td style="background-color: #f0db1d; text-align: center;"><span style="color: #000000; font-size: 12pt;">5</span></td>
+<td style="background-color: #f0db1d; text-align: center;"><span style="color: #000000; font-size: 12pt;">6</span></td>
+<td style="background-color: #f0db1d; text-align: center;"><span style="color: #000000; font-size: 12pt;">8</span></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 12pt;">Representa la nube de puntos e indica el tipo de correlación entre las variables.</span></p>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/estadistica-bidimensional.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/parametros-asociados.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">creative commons: attribution - share alike 4.0 (BY-SA)</a></p>
+</div>
+<div id="siteUserFooter"> <div><script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script></div>
+</div></div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

@@ -1,0 +1,512 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Varianza y Desviación típica </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1.3 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={previous:"Anterior",next:"Siguiente",show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú",download:"Descargar",print:"Imprimir"}</script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+<body class="exe-web-site" id="exe-node-21"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Estadística</a></li>
+   <li><a href="1conceptos_elementales_de_estadstica.html" class="daddy">1.Conceptos elementales de estadística.</a>
+   <ul class="other-section">
+      <li><a href="muestreo.html" class="no-ch">Muestreo</a></li>
+      <li><a href="tipos_de_variables.html" class="no-ch">Tipos de variables</a></li>
+      <li><a href="tablas_de_frecuencia.html" class="no-ch">Tablas de frecuencia</a></li>
+      <li><a href="cuestionario.html" class="no-ch">Cuestionario</a></li>
+      <li><a href="actividades.html" class="daddy">Actividades</a>
+      <ul class="other-section">
+         <li><a href="solucin_actividad_1.html" class="no-ch">Solución actividad 1</a></li>
+         <li><a href="solucin_actividad_2.html" class="no-ch">Solución actividad 2</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="2grficos_estadsticos.html" class="daddy">2.Gráficos estadísticos</a>
+   <ul class="other-section">
+      <li><a href="diagrama_de_barras.html" class="no-ch">Diagrama de barras</a></li>
+      <li><a href="histograma.html" class="no-ch">Histograma</a></li>
+      <li><a href="diagrama_de_sectores.html" class="no-ch">Diagrama de sectores</a></li>
+   </ul>
+   </li>
+   <li><a href="3medidas_de_centralizacin_y_posicin.html" class="daddy">3.Medidas de centralización y posición</a>
+   <ul class="other-section">
+      <li><a href="moda.html" class="no-ch">Moda</a></li>
+      <li><a href="media.html" class="no-ch">Media</a></li>
+      <li><a href="mediana.html" class="no-ch">Mediana</a></li>
+      <li><a href="cuartiles_deciles_y_percentiles.html" class="no-ch">Cuartiles, Deciles y Percentiles</a></li>
+      <li><a href="repaso.html" class="no-ch">Repaso</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="4medidas_de_dispersin.html" class="current-page-parent daddy">4.Medidas de dispersión</a>
+   <ul>
+      <li><a href="recorrido_o_rango.html" class="no-ch">Recorrido o Rango</a></li>
+      <li id="active"><a href="varianza_y_desviacin_tpica.html" class="active no-ch">Varianza y Desviación típica</a></li>
+      <li><a href="coeficiente_de_variacin.html" class="no-ch">Coeficiente de Variación</a></li>
+      <li><a href="intepretaciones_conjunta_de_la_media_y_la_desviacin_tpica.html" class="no-ch">Intepretaciones conjunta de la media y la desviación típica</a></li>
+   </ul>
+   </li>
+   <li><a href="5distribuciones_bidimensionales.html" class="daddy">5.Distribuciones bidimensionales</a>
+   <ul class="other-section">
+      <li><a href="correlacin_lineal.html" class="no-ch">Correlación lineal</a></li>
+      <li><a href="tablas_de_contingencia.html" class="no-ch">Tablas de contingencia</a></li>
+   </ul>
+   </li>
+   <li><a href="6covarianza_y_coeficiente_de_correlacin_lineal.html" class="daddy">6.Covarianza y coeficiente de correlación lineal</a>
+   <ul class="other-section">
+      <li><a href="centro_de_gravedad.html" class="no-ch">Centro de gravedad</a></li>
+      <li><a href="covarianza.html" class="no-ch">Covarianza</a></li>
+      <li><a href="coeficiente_de_correlacin_lineal.html" class="no-ch">Coeficiente de correlación lineal</a></li>
+      <li><a href="actividades0.html" class="no-ch">Actividades</a></li>
+      <li><a href="repaso0.html" class="no-ch">Repaso</a></li>
+   </ul>
+   </li>
+   <li><a href="7_recta_de_regresin_lineal.html" class="daddy">7. Recta de regresión lineal</a>
+   <ul class="other-section">
+      <li><a href="actividades1.html" class="daddy">Actividades</a>
+      <ul class="other-section">
+         <li><a href="solucin_actividad_10.html" class="no-ch">Solución actividad 1</a></li>
+         <li><a href="solucin_actividad_20.html" class="no-ch">Solución actividad 2</a></li>
+         <li><a href="solucin_actividad_3.html" class="no-ch">Solución actividad 3</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="recorrido_o_rango.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="coeficiente_de_variacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Varianza y Desviación típica</h1></header>
+<article class="iDevice_wrapper objectivesIdevice em_iDevice" id="id122">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Introducción</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta122_42_2" class="block iDevice_content">
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td style="width: 70%;">
+<blockquote class="exe-quote-cite styled-qc">
+<p><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Monitorear la varianza es esencial en las industrias de manufactura y control de calidad, porque con la reducción de la varianza del proceso aumenta la precisión y disminuye el número de defectos. Por ejemplo, una fábrica produce clavos para carpintería que miden 50 mm de largo y un clavo cumple con las especificaciones si su longitud no difiere en más de 2 mm del valor objetivo de 50 mm. La fábrica utiliza dos tipos de máquina para producir los clavos. Ambas máquinas producen clavos con longitudes distribuidas normalmente y una longitud media de 50 mm. Sin embargo, los clavos de cada máquina tienen varianzas diferentes: la máquina A, con la distribución de línea continua en la siguiente figura, produce clavos con una varianza de 9 mm2, mientras que la máquina B, con la distribución de la línea de puntos en la siguiente figura, produce clavos con una varianza de 1 mm2. La longitud de los clavos de la máquina A tiene una variación mayor que la longitud de los clavos de la máquina B. Por lo tanto, cualquier clavo en particular de la máquina A tiene una mayor probabilidad de estar fuera de los límites de especificación que un clavo de la máquina B.</span></p>
+<span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"><cite>https://support.minitab.com/es-mx/minitab/18/help-and-how-to/statistics/basic-statistics/supporting-topics/data-concepts/what-is-the-variance/</cite></span></blockquote>
+<span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;"> Es decir, la <strong>varianza</strong> mide la <strong>forma en que varían</strong> los datos que tenemos.</span></td>
+<td style="width: 30%;"><img src="https://support.minitab.com/es-mx/minitab/18/probability_dist_plot_variance_def.png" width="100%" /></td>
+</tr>
+</tbody>
+</table>
+<table style="width: 100%;">
+<tbody>
+<tr style="height: 174.979px;">
+<td style="width: 30%; height: 174.979px;"><img src="https://support.minitab.com/es-mx/minitab/18/individual_val_plot_standard_deviation_def_1.png" width="100%" /></td>
+<td style="width: 70%; height: 174.979px;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Sin embargo, para el caso de la <strong>desviación típica</strong> nos <strong>cuantificará</strong> cuanto es <strong>lo que se desvía</strong> <strong>de la media,</strong> tiene las mismas unidades que nuestro datos del problema. Un ejemplo podría ser los tiempos de espera en una consulta del médico donde como podemos ver en este gráfico en este caso serían muy parejos. De otra manera, estaría los valores muy cerca de la media.</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper objectivesIdevice em_iDevice" id="id123">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Definición de Varianza</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta123_43_2" class="block iDevice_content">
+<p><span style="font-size: 12pt;">La <strong>varianza</strong>, $\mathbf{s^{2}}$, es la media de los cuadrados de las desviaciones de los datos respecto de la media de la distribución:</span></p>
+<p><span style="font-size: 12pt;">$$ s^{2} = \frac{(x_1-\bar{x})^{2}\cdot f_1 + (x_2-\bar{x})^{2}\cdot f_2 + (x_3-\bar{x})^{2}\cdot f_3 + \cdots + (x_n-\bar{x})^{2}\cdot f_n}{N} $$</span></p>
+<p><span style="font-size: 12pt;">Es decir:</span></p>
+<p><span style="font-size: 12pt;">$$ s^2 = \frac{\sum (x_i-\bar{x})^{2}\cdot f_i }{N} = \frac{\sum x_{i}^{2}\cdot f_i}{N}-\bar{x}^{2}$$</span></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper objectivesIdevice em_iDevice" id="id124">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Definición de la Desviación Típica</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta124_44_2" class="block iDevice_content">
+<p><span style="font-size: 12pt;">La desviación típica, $\mathbf{s}$, es la desviación media de una variable respecto a su media. La desviación típica es siempre mayor o igual que cero y está expresada en la mismas unidades que la variable de estudio. Para calcularla haremos la raíz cuadrada a la varianza:</span></p>
+<p><span style="font-size: 12pt;">$$ s = \sqrt{\frac{(x_1-\bar{x})^{2}\cdot f_1 + (x_2-\bar{x})^{2}\cdot f_2 + (x_3-\bar{x})^{2}\cdot f_3 + \cdots + (x_n-\bar{x})^{2}\cdot f_n}{N}} $$</span></p>
+<p><span style="font-size: 12pt;">Es decir:</span></p>
+<p><span style="font-size: 12pt;">$$ s =\sqrt{ \frac{\sum (x_i-\bar{x})^{2}\cdot f_i }{N}} =\sqrt{ \frac{\sum x_{i}^{2}\cdot f_i}{N}-\bar{x}^{2}}$$</span></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper objectivesIdevice em_iDevice" id="id125">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Algoritmo para el calculo de la varianza y la desviación tlipica</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta125_45_2" class="block iDevice_content">
+<p><span style="font-size: 12pt;">Para calcular la varianza lo que haremos será añadir una columna más a la tabla de frecuencias</span></p>
+<table style="width: 80%; margin-left: auto; margin-right: auto;" border="1" cellpadding="2" cellspacing="1">
+<tbody>
+<tr>
+<td style="background-color: #dbdbdb; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$\mathbf{x_i}$</span></td>
+<td style="background-color: #dbdbdb; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$\mathbf{f_i}$</span></td>
+<td style="background-color: #dbdbdb; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$\mathbf{x_i \cdot f_i}$</span></td>
+<td style="background-color: #dbdbdb; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$\mathbf{x_{i}^{2} \cdot f_i}$</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$x_1$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$f_1$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$x_1 \cdot f_1$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$x_{1}^{2} \cdot f_1$</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$x_2$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$f_2$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$x_2 \cdot f_2$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$x_{2}^{2} \cdot f_2$</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$x_3$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$f_3$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$x_3 \cdot f_3$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$x_{3}^{2} \cdot f_3$</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$\cdots$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$\cdots$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$\cdots$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$\cdots$</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="font-size: 12pt;"><span style="font-family: arial, helvetica, sans-serif;">$x_n$</span></span></td>
+<td style="text-align: center;"><span style="font-size: 12pt;"><span style="font-family: arial, helvetica, sans-serif;">$f_n$</span></span></td>
+<td style="text-align: center;"><span style="font-size: 12pt;"><span style="font-family: arial, helvetica, sans-serif;">$x_n \cdot f_n$</span></span></td>
+<td style="text-align: center;"><span style="font-size: 12pt;"><span style="font-family: arial, helvetica, sans-serif;">$x_{n}^{2} \cdot f_n$</span></span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$\mathbf{\sum Totales}$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$\mathbf{\sum f_i = N}$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$\mathbf{\sum x_i \cdot f_i}$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$\mathbf{\sum x_i^2 \cdot f_i}$</span></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 12pt;">Calcularemos la media cogiendo el sumatorio de la 3ª columna y diviéndolo por N:</span></p>
+<p><span style="font-size: 12pt;">$$\mathbf{\bar{x}}=\frac{\sum x_i \cdot f_i}{N}$$</span></p>
+<p><span style="font-size: 12pt;">Para el calculo de la varianza cogeremos el sumatoria de la 4ª lo dividiremos por N y le restaremos la media al cuadrado</span></p>
+<p><span style="font-size: 12pt;">$$\mathbf{s^2} =\frac{ \sum x_{i}^{2} \cdot f_i}{N}-\bar{x}^{2}$$</span></p>
+<p><span style="font-size: 12pt;">Para calcular la desviación típica haremos la raiz a la varianza</span></p>
+<p><span style="font-size: 12pt;">$$\mathbf{s} = \sqrt{s^{2}} = \sqrt{\frac{ \sum x_{i}^{2} \cdot f_i}{N}-\bar{x}^{2}}$$</span></p>
+<p><span style="font-size: 12pt;"></span></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper activityIdevice em_iDevice" id="id126">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ejemplo 1</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta126_47_2" class="block iDevice_content">
+<p><span style="font-size: 16px;">Se ha realizado una encuesta para saber cuantas veces huevos se comen a la semana en un familia obteniendo los siguientes resultados:</span></p>
+<p><span style="font-size: 12pt;">1,5,3,2,1,0,0,2,1,2,3,5,0,5,4,1,1,1,2,0,1,2, 2, 3, 0</span></p>
+<p><span style="font-size: 12pt;">¿Cuál será su varianza y desviación típica?</span></p>
+<p><span style="font-size: 12pt;"></span><span style="font-size: 12pt;"></span></p>
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 16px;">Procedemos ha realizar la tabla de frecuencias</span></p>
+<table style="width: 80%;" border="1" cellpadding="2" cellspacing="1">
+<tbody>
+<tr>
+<td style="width: 25%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$\mathbf{x_i}$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$\mathbf{f_i}$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$\mathbf{x_i \cdot f_i}$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$\mathbf{x_{i}^{2} \cdot f_i}$</span></td>
+</tr>
+<tr>
+<td style="width: 25%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$0$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$5$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$0$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$0$</span></td>
+</tr>
+<tr>
+<td style="width: 25%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$1$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$7$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt;">$7$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt;">$7$</span></td>
+</tr>
+<tr>
+<td style="width: 25%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$2$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$6$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt;">$12$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt;">$24$</span></td>
+</tr>
+<tr>
+<td style="width: 25%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$3$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$3$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt;">$9$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt;">$27$</span></td>
+</tr>
+<tr>
+<td style="width: 25%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$4$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$1$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt;">$4$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt;">$16$</span></td>
+</tr>
+<tr>
+<td style="width: 25%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$5$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$3$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt;">$15$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt;">$75$</span></td>
+</tr>
+<tr>
+<td style="width: 25%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$\mathbf{\sum }$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$25$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt;">$47$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt;">$149$</span></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 12pt;">Calculamos entonces la media:</span></p>
+<p><span style="font-size: 12pt;">$$\mathbf{\bar{x}}=\frac{\sum x_i \cdot f_i }{N}=\frac{47}{25} =1,88 u. $$</span></p>
+<p><span style="font-size: 12pt;">Calculamos ahora la varianza:</span></p>
+<p><span style="font-size: 12pt;">$$\mathbf{s^2} = \frac{\sum x_{i}^{2} \cdot f_i }{N} - \bar{x}^{2} =\frac{149}{25} -1,88^2=2,4256 u^{2}. $$</span></p>
+<p><span style="font-size: 16px;">Calculamos la desviación típica:</span></p>
+<p><span style="font-size: 16px;">$$\mathbf{s} = \sqrt{s^2} = \sqrt{2,4256} \simeq 1,56 u. $$</span></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper activityIdevice em_iDevice" id="id127">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ejemplo 2</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta127_48_2" class="block iDevice_content">
+<p><span style="font-size: 12pt;">En la consultar de un doctor se han recogido los siguiente datos sobre los pesos de una personas:</span></p>
+<table style="width: 80%; margin-left: auto; margin-right: auto;" border="1" cellpadding="2" cellspacing="1">
+<tbody>
+<tr>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Peso en Kg</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">[ 50 - 60 )</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">[ 60 - 70 )</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">[ 70 - 80 )</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">[ 80 - 90 )</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">[ 90 - 100 )</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$f_i$</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">10</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">12</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">20</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">6</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">2</span></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 12pt;">¿Cuál será su varianza y desviación típica?</span></p>
+<table style="width: 100%;">
+<tbody>
+<tr>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 12pt;">El proceso ha realizar es igual que en el ejemplo anterior, con la salvedad que usaremos las marcas de clase (puntos medios de los intervalos) para los cálculos</span></p>
+<table style="width: 80%; margin-left: auto; margin-right: auto;" border="1" cellpadding="2" cellspacing="1">
+<tbody>
+<tr>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Peso (Kg)</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$\mathbf{x_i}$</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$\mathbf{f_i}$</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$\mathbf{x_i \cdot f_i}$</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$\mathbf{x_i^2 \cdot f_i}$</span></td>
+</tr>
+<tr>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">[ 50 - 60 ]</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$55$</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$10$</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$550$</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$30250$</span></td>
+</tr>
+<tr>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">[ 60 - 70 ]</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$65$</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$12$</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$780$</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$50700$</span></td>
+</tr>
+<tr>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">[ 70 - 80 ]</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$75$</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$20$</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$1500$</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$112500$</span></td>
+</tr>
+<tr>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">[ 80 - 90 ]</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$85$</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$6$</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$510$</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$43350$</span></td>
+</tr>
+<tr>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">[ 90 - 100 ]</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$95$</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$2$</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$190$</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$18050$</span></td>
+</tr>
+<tr>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">----------</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$\mathbf{\sum }$</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$50$</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$3530$</span></td>
+<td style="width: 20%; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">$254850$</span></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 12pt;">Calculamos entonces la media:</span></p>
+<p><span style="font-size: 12pt;">$$\mathbf{\bar{x}}=\frac{\sum x_i \cdot f_i }{N}=\frac{3530}{50} =70,6 kg $$</span></p>
+<p><span style="font-size: 12pt;">Calculamos ahora la varianza:</span></p>
+<p><span style="font-size: 12pt;">$$\mathbf{s^2} = \frac{\sum x_{i}^{2} \cdot f_i }{N} - \bar{x}^{2} =\frac{254850}{50} -70,6^2=112,64 kg^2 $$</span></p>
+<p><span style="font-size: 12pt;">Calculamos la desviación típica:</span></p>
+<p><span style="font-size: 12pt;">$$\mathbf{s} = \sqrt{s^2} = \sqrt{112,64} \simeq 10,61 kg $$</span></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper activityIdevice em_iDevice" id="id128">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ejercicio 1</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta128_49_2" class="block iDevice_content">
+<p><span style="font-size: 12pt;">La siguiente tabla recoge el tiempo de retraso (en minutos) de un tren de cercanías, a lo largo de dos semanas.</span></p>
+<table style="width: 80%; margin-left: auto; margin-right: auto;" border="1" cellpadding="2" cellspacing="1">
+<tbody>
+<tr>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Semana 1</span></td>
+</tr>
+</tbody>
+</table>
+<table style="width: 80%; margin-left: auto; margin-right: auto;" border="1" cellpadding="2" cellspacing="1">
+<tbody>
+<tr style="text-align: center;">
+<td><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Día</span></td>
+<td><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">L</span></td>
+<td><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">M</span></td>
+<td><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">X</span></td>
+<td><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">J</span></td>
+<td><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">V</span></td>
+<td><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">S</span></td>
+<td><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">D</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Retraso</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">12</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">32</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">24</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">14</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">16</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">33</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">4</span></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+<table style="width: 80%; margin-left: auto; margin-right: auto;" border="1" cellpadding="2" cellspacing="1">
+<tbody>
+<tr style="height: 12.191px;">
+<td style="height: 12.191px; text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Semana 2</span></td>
+</tr>
+</tbody>
+</table>
+<table style="width: 80%; margin-left: auto; margin-right: auto;" border="1" cellpadding="2" cellspacing="1">
+<tbody>
+<tr>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Día</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">L</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">M</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">X</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">J</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">V</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">S</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">D</span></td>
+</tr>
+<tr>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">Retraso</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">18</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">28</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">14</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">25</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">8</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">10</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">5</span></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 12pt;">Calcular la varianza y desviación típica</span></p>
+<p><span style="font-size: 12pt;">¿En qué semana podemos afirmar que el tren tiene un retraso medio más exacto?</span></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper activityIdevice em_iDevice" id="id129">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ejercicio 2</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta129_50_2" class="block iDevice_content">
+<p><span style="font-size: 12pt;">Hallar la varianza y desviación típica de la siguiente distribución:</span></p>
+<p><img src="m2_img0.png" width="80%" height="40.9%" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="recorrido_o_rango.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="coeficiente_de_variacin.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter"><script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script></footer></div>
+<script type="text/javascript" src="_silver_js.js"></script></body></html>

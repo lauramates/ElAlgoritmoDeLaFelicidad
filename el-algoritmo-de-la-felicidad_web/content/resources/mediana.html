@@ -1,0 +1,493 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Mediana </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1.3 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={previous:"Anterior",next:"Siguiente",show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú",download:"Descargar",print:"Imprimir"}</script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+<body class="exe-web-site" id="exe-node-16"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Estadística</a></li>
+   <li><a href="1conceptos_elementales_de_estadstica.html" class="daddy">1.Conceptos elementales de estadística.</a>
+   <ul class="other-section">
+      <li><a href="muestreo.html" class="no-ch">Muestreo</a></li>
+      <li><a href="tipos_de_variables.html" class="no-ch">Tipos de variables</a></li>
+      <li><a href="tablas_de_frecuencia.html" class="no-ch">Tablas de frecuencia</a></li>
+      <li><a href="cuestionario.html" class="no-ch">Cuestionario</a></li>
+      <li><a href="actividades.html" class="daddy">Actividades</a>
+      <ul class="other-section">
+         <li><a href="solucin_actividad_1.html" class="no-ch">Solución actividad 1</a></li>
+         <li><a href="solucin_actividad_2.html" class="no-ch">Solución actividad 2</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="2grficos_estadsticos.html" class="daddy">2.Gráficos estadísticos</a>
+   <ul class="other-section">
+      <li><a href="diagrama_de_barras.html" class="no-ch">Diagrama de barras</a></li>
+      <li><a href="histograma.html" class="no-ch">Histograma</a></li>
+      <li><a href="diagrama_de_sectores.html" class="no-ch">Diagrama de sectores</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="3medidas_de_centralizacin_y_posicin.html" class="current-page-parent daddy">3.Medidas de centralización y posición</a>
+   <ul>
+      <li><a href="moda.html" class="no-ch">Moda</a></li>
+      <li><a href="media.html" class="no-ch">Media</a></li>
+      <li id="active"><a href="mediana.html" class="active no-ch">Mediana</a></li>
+      <li><a href="cuartiles_deciles_y_percentiles.html" class="no-ch">Cuartiles, Deciles y Percentiles</a></li>
+      <li><a href="repaso.html" class="no-ch">Repaso</a></li>
+   </ul>
+   </li>
+   <li><a href="4medidas_de_dispersin.html" class="daddy">4.Medidas de dispersión</a>
+   <ul class="other-section">
+      <li><a href="recorrido_o_rango.html" class="no-ch">Recorrido o Rango</a></li>
+      <li><a href="varianza_y_desviacin_tpica.html" class="no-ch">Varianza y Desviación típica</a></li>
+      <li><a href="coeficiente_de_variacin.html" class="no-ch">Coeficiente de Variación</a></li>
+      <li><a href="intepretaciones_conjunta_de_la_media_y_la_desviacin_tpica.html" class="no-ch">Intepretaciones conjunta de la media y la desviación típica</a></li>
+   </ul>
+   </li>
+   <li><a href="5distribuciones_bidimensionales.html" class="daddy">5.Distribuciones bidimensionales</a>
+   <ul class="other-section">
+      <li><a href="correlacin_lineal.html" class="no-ch">Correlación lineal</a></li>
+      <li><a href="tablas_de_contingencia.html" class="no-ch">Tablas de contingencia</a></li>
+   </ul>
+   </li>
+   <li><a href="6covarianza_y_coeficiente_de_correlacin_lineal.html" class="daddy">6.Covarianza y coeficiente de correlación lineal</a>
+   <ul class="other-section">
+      <li><a href="centro_de_gravedad.html" class="no-ch">Centro de gravedad</a></li>
+      <li><a href="covarianza.html" class="no-ch">Covarianza</a></li>
+      <li><a href="coeficiente_de_correlacin_lineal.html" class="no-ch">Coeficiente de correlación lineal</a></li>
+      <li><a href="actividades0.html" class="no-ch">Actividades</a></li>
+      <li><a href="repaso0.html" class="no-ch">Repaso</a></li>
+   </ul>
+   </li>
+   <li><a href="7_recta_de_regresin_lineal.html" class="daddy">7. Recta de regresión lineal</a>
+   <ul class="other-section">
+      <li><a href="actividades1.html" class="daddy">Actividades</a>
+      <ul class="other-section">
+         <li><a href="solucin_actividad_10.html" class="no-ch">Solución actividad 1</a></li>
+         <li><a href="solucin_actividad_20.html" class="no-ch">Solución actividad 2</a></li>
+         <li><a href="solucin_actividad_3.html" class="no-ch">Solución actividad 3</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="media.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="cuartiles_deciles_y_percentiles.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Mediana</h1></header>
+<article class="iDevice_wrapper objectivesIdevice em_iDevice" id="id96">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Introducción</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta96_47_2" class="block iDevice_content">
+<p><span style="font-size: 12pt;">Como habrás visto, la media se ve afectada si los datos son muy grandes o muy pequeños, haciendo que ésta cambie rápidamente. Esto lo solucionamos cuando calculamos la <strong>Mediana. </strong></span></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper objectivesIdevice em_iDevice" id="id97">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Definición</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta97_48_2" class="block iDevice_content">
+<p><span style="font-size: 12pt;">La mediana, <strong>Me,</strong> es el dato que ocupa el centro de los datos cuando están ordenados de menor a mayor. El número de datos que hay por debajo de la mediana coincide con el número de datos que hay por encima.</span></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper objectivesIdevice em_iDevice" id="id98">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Proceso para calcular la mediana</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta98_49_2" class="block iDevice_content">
+<p><span style="font-size: 12pt;">La mediana de un conjunto se calcula de la forma siguiente:</span></p>
+<ul>
+<li><span style="font-size: 12pt;">Se ordenan los números, disponiéndolos de menor a mayor.</span></li>
+<li><span style="font-size: 12pt;">Si la cantidad de números ordenados resultara ser impar, la mediana estadística será el número que se encuentra en el centro del conjunto de números, es decir, el valor central.</span></li>
+<li><span style="font-size: 12pt;">Si por el contrario, el conjunto de números ordenados diera un total de cifras pares, se tomarán los dos números que se encuentran en el centro del conjunto, y se calculará su media</span></li>
+</ul>
+<p></p>
+<p><span style="font-size: 12pt;">Si los datos están agrupados en intervalos, el <strong>intervalo mediano</strong> (donde la frecuencia acumulada llega hasta la mitad de la suma de las frecuencias absolutas) contiene a la mediana. Una vez que tenemos calculado el intervalo mediano, la mediana se calcula mediante:</span></p>
+<p><span style="font-size: 12pt;">$$ Me = L_i + \frac{\frac{N}{2} - F_{i-1}}{f_i} \cdot a_i $$</span></p>
+<p><span style="font-size: 12pt;">donde:</span></p>
+<p></p>
+<table style="width: 41.2808%;">
+<tbody>
+<tr>
+<td style="width: 12%;"><span style="font-size: 12pt;">$$L_i$$</span></td>
+<td style="width: 118.367%;"><span style="font-size: 12pt;">es el límite inferior de la clase donde se encuentra la mediana.</span></td>
+</tr>
+<tr>
+<td style="width: 12%;"><span style="font-size: 12pt;">$$ N / 2 $$</span></td>
+<td style="width: 118.367%;"><span style="font-size: 12pt;">es la semisuma de las frecuencias absolutas</span></td>
+</tr>
+<tr>
+<td style="width: 12%;"><span style="font-size: 12pt;">$$ F_{i-1} $$</span></td>
+<td style="width: 118.367%;"><span style="font-size: 12pt;">es la frecuencia acumulada anterior a la clase mediana</span></td>
+</tr>
+<tr>
+<td style="width: 12%;"><span style="font-size: 12pt;">$$ a_i $$</span></td>
+<td style="width: 118.367%;"><span style="font-size: 12pt;">es la amplitud de la clase</span></td>
+</tr>
+</tbody>
+</table>
+<p></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper TrueFalseIdevice em_iDevice" id="id99">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Primer cuestionario</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta99_100" class="block iDevice_content">
+<p><span style="font-size: 12pt;">Veamos si has entendido el concepto anterior...</span></p>
+</div>
+<section class="question">
+<form name="true-false-form-0b99" action="#" class="activity-form">
+<h1 class="js-sr-av">Pregunta 1</h1>
+<div id="taquestion0b99" class="block iDevice_content">
+<p><span style="color: #000080; font-size: 12pt;">La mediana existe para cualquier tipo de variable</span></p>
+</div>
+<script type="text/javascript">$exe.hint.imgs=["panel-amusements.png","stock-stop.png"]</script>
+<section class="iDevice_hint">
+<h1 class="iDevice_hint_title">Sugerencia</h1>
+<div class="iDevice_hint_content js-hidden">
+<p><span style="font-size: 12pt;">Repasa el proceso para calcular la mediana y te darás cuenta de una cosa...</span></p></div>
+</section>
+<p class="iDevice_answer js-required">
+<label for="true0b99"><input type="radio" name="option0b99" id="true0b99" onclick="$exe.getFeedback(0,2,'0b99','truefalse')" /> Verdadero</label> 
+<label for="false0b99"><input type="radio" name="option0b99" id="false0b99" onclick="$exe.getFeedback(1,2,'0b99','truefalse')" /> Falso</label>
+</p>
+</form>
+<section id="s0b99" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p><strong id="s0b99-result" class="wrong">Falso</strong></p>
+<p><span style="font-size: 12pt;">¡ Falso ! La mediana solo existe para variables numéricas</span></p>
+</section>
+</section>
+<section class="question">
+<form name="true-false-form-1b99" action="#" class="activity-form">
+<h1 class="js-sr-av">Pregunta 2</h1>
+<div id="taquestion1b99" class="block iDevice_content">
+<p><span style="color: #000080; font-size: 12pt;">Supongamos que tenemos un conjunto de números y la Me = 5. De repente, hemos visto que mientras los copiábamos, nos hemos equivocado y hemos copiado todos los números una unidad más pequeños. ¿Crees que en el conjunto nuevo de datos, Me = 6?</span></p>
+</div>
+<p class="iDevice_answer js-required">
+<label for="true1b99"><input type="radio" name="option1b99" id="true1b99" onclick="$exe.getFeedback(0,2,'1b99','truefalse')" /> Verdadero</label> 
+<label for="false1b99"><input type="radio" name="option1b99" id="false1b99" onclick="$exe.getFeedback(1,2,'1b99','truefalse')" /> Falso</label>
+</p>
+</form>
+<section id="s1b99" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p><strong id="s1b99-result" class="right">Verdadero</strong></p>
+<p><span style="font-size: 12pt;">¡ Verdadero ! Si sumamos 1 a todos los datos, todos los datos se desplazan una unidad hacia la derecha. Por tanto, la mediana también se desplazará.</span></p>
+</section>
+</section>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper EleccionmultiplefpdIdevice em_iDevice" id="id100">
+<div class="iDevice emphasis_autoevaluacionfpd" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Segundo cuestionario</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section class="question">
+<form name="multi-choice-form-100_141" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion100_141" class="block question iDevice_content">
+<p><span style="font-size: 12pt;"><strong>Comparar la media con la mediana de un conjunto de datos te da una idea de lo esparcidos que se encuentran los valores del conjunto de datos</strong></span></p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i100_144" class="sr-av"><a href="#answer-100_144">Opción 1</a></label><input type="radio" name="option100_141" id="i100_144" onclick="$exe.getFeedback(0,3,'100_141','multi')"/>
+</p>
+<div class="iDevice_answer-content" id="answer-100_144"><div id="taans100_144" class="block iDevice_content">
+<p><span style="font-size: 12pt;">La media y la mediana tienen que coincidir para saber esto</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i100_189" class="sr-av"><a href="#answer-100_189">Opción 2</a></label><input type="radio" name="option100_141" id="i100_189" onclick="$exe.getFeedback(1,3,'100_141','multi')"/>
+</p>
+<div class="iDevice_answer-content" id="answer-100_189"><div id="taans100_189" class="block iDevice_content">
+<p><span style="font-size: 12pt;">Si la media es mayor que la mediana los datos están mal</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i100_195" class="sr-av"><a href="#answer-100_195">Opción 3</a></label><input type="radio" name="option100_141" id="i100_195" onclick="$exe.getFeedback(2,3,'100_141','multi')"/>
+</p>
+<div class="iDevice_answer-content" id="answer-100_195"><div id="taans100_195" class="block iDevice_content">
+<p><span style="font-size: 12pt;">Cuando la media y la mediana distan mucho los datos están muy desperdigados</span></p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b100_141" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+<section id="sa1b100_141" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+<section id="sa2b100_141" class="feedback js-hidden">
+<p>Opción correcta</p>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-100_144">Incorrecto</a><span> (<a href="#sa0b100_141">Retroalimentación</a>)</span></li>
+<li><a href="#answer-100_189">Incorrecto</a><span> (<a href="#sa1b100_141">Retroalimentación</a>)</span></li>
+<li><a href="#answer-100_195">Opción correcta</a><span> (<a href="#sa2b100_141">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+<br/><section class="question">
+<form name="multi-choice-form-100_198" action="#" onsubmit="return false" class="activity-form">
+<h1 class="js-sr-av">Pregunta</h1>
+<div id="taquestion100_198" class="block question iDevice_content">
+<p><span style="font-size: 12pt;"><strong>¿Cuál de las siguientes características no se corresponde con el concepto de mediana?</strong></span></p>
+</div>
+<section class="iDevice_answers">
+<h1 class="js-sr-av">Respuestas</h1>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i100_201" class="sr-av"><a href="#answer-100_201">Opción 1</a></label><input type="radio" name="option100_198" id="i100_201" onclick="$exe.getFeedback(0,4,'100_198','multi')"/>
+</p>
+<div class="iDevice_answer-content" id="answer-100_201"><div id="taans100_201" class="block iDevice_content">
+<p><span style="font-size: 12pt;">Es el centro de gravedad de la distribución</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i100_204" class="sr-av"><a href="#answer-100_204">Opción 2</a></label><input type="radio" name="option100_198" id="i100_204" onclick="$exe.getFeedback(1,4,'100_198','multi')"/>
+</p>
+<div class="iDevice_answer-content" id="answer-100_204"><div id="taans100_204" class="block iDevice_content">
+<p><span style="font-size: 12pt;">No se ve afectada por los valores extremos</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i100_207" class="sr-av"><a href="#answer-100_207">Opción 3</a></label><input type="radio" name="option100_198" id="i100_207" onclick="$exe.getFeedback(2,4,'100_198','multi')"/>
+</p>
+<div class="iDevice_answer-content" id="answer-100_207"><div id="taans100_207" class="block iDevice_content">
+<p><span style="font-size: 12pt;">Deja por debajo el mismo número de datos que por encima</span></p>
+</div>
+</div>
+</section>
+<section class="iDevice_answer">
+<p class="iDevice_answer-field js-required">
+<label for="i100_210" class="sr-av"><a href="#answer-100_210">Opción 4</a></label><input type="radio" name="option100_198" id="i100_210" onclick="$exe.getFeedback(3,4,'100_198','multi')"/>
+</p>
+<div class="iDevice_answer-content" id="answer-100_210"><div id="taans100_210" class="block iDevice_content">
+<p><span style="font-size: 12pt;">Todo lo anterior se corresponde con la mediana</span></p>
+</div>
+</div>
+</section>
+</section>
+<section class="iDevice_feedbacks js-feedback">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<section id="sa0b100_198" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+<section id="sa1b100_198" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+<section id="sa2b100_198" class="feedback js-hidden">
+<p>Incorrecto</p>
+</section>
+<section id="sa3b100_198" class="feedback js-hidden">
+<p>Opción correcta</p>
+</section>
+</section>
+</form>
+<section class="iDevice_solution feedback js-hidden">
+<h1>Solución</h1>
+<ol>
+<li><a href="#answer-100_201">Incorrecto</a><span> (<a href="#sa0b100_198">Retroalimentación</a>)</span></li>
+<li><a href="#answer-100_204">Incorrecto</a><span> (<a href="#sa1b100_198">Retroalimentación</a>)</span></li>
+<li><a href="#answer-100_207">Incorrecto</a><span> (<a href="#sa2b100_198">Retroalimentación</a>)</span></li>
+<li><a href="#answer-100_210">Opción correcta</a><span> (<a href="#sa3b100_198">Retroalimentación</a>)</span></li>
+</ol>
+</section>
+</section>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice" id="id101">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ejercicio Resueltos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta101_148" class="block story iDevice_content">
+<p><span style="font-size: 12pt;">Calcula la Mediana de los siguientes conjuntos de datos:</span></p>
+</section>
+<section id="taquesQuestion0b101" class="block iDevice_content">
+<p><span style="font-size: 12pt;">{3,56,23,7,348,22,-46,0}</span></p>
+</section>
+<form name="feedback-form-quesFeedback0b101" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b101text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b101" value="Mostrar retroalimentación" class="feedbackbutton" onclick="$exe.toggleFeedback(this,true);return false" /></p>
+</div>
+<section id="feedback-quesFeedback0b101" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p><span style="font-size: 12pt;">En primer lugar, ordenamos los datos: {-46,0,3,7,22,23,56,348}.</span></p>
+<p><span style="font-size: 12pt;">Una vez que los tenemos ordenados, contamos el número de elementos que tiene el conjunto (8). Como es par, tenemos que calcular la media de los valores centrales (7 y 22).</span></p>
+<p><span style="font-size: 12pt;">Por lo tanto, Me = 14.5 </span></p></section>
+</form>
+<section id="taquesQuestion1b101" class="block iDevice_content">
+<p><span style="font-size: 12pt;">Calcula la mediana ahora con estos datos:</span></p>
+<table class="exe-table" style="width: 50%; float: left;">
+<tbody>
+<tr>
+<td></td>
+<th style="text-align: center;"><span style="font-size: 12pt;">$$ f_i $$</span></th>
+<th style="text-align: center;"><span style="font-size: 12pt;">$$F_i$$</span></th>
+</tr>
+<tr>
+<th style="text-align: center;"><span style="font-size: 12pt;">[60,63)</span></th>
+<td style="text-align: center;"><span style="font-size: 12pt;">5</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt;">5</span></td>
+</tr>
+<tr>
+<th style="text-align: center;"><span style="font-size: 12pt;">[63,66)</span></th>
+<td style="text-align: center;"><span style="font-size: 12pt;">18</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt;">23</span></td>
+</tr>
+<tr>
+<th style="text-align: center;"><span style="font-size: 12pt;">[66,69)</span></th>
+<td style="text-align: center;"><span style="font-size: 12pt;">42</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt;">65</span></td>
+</tr>
+<tr>
+<th style="text-align: center;"><span style="font-size: 12pt;">[69,72)</span></th>
+<td style="text-align: center;"><span style="font-size: 12pt;">27</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt;">92</span></td>
+</tr>
+<tr>
+<th style="text-align: center;"><span style="font-size: 12pt;">[72,75)</span></th>
+<td style="text-align: center;"><span style="font-size: 12pt;">8</span></td>
+<td style="text-align: center;"><span style="font-size: 12pt;">100</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<form name="feedback-form-quesFeedback1b101" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback1b101text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback1b101" value="Mostrar retroalimentación" class="feedbackbutton" onclick="$exe.toggleFeedback(this,true);return false" /></p>
+</div>
+<section id="feedback-quesFeedback1b101" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p><span style="font-size: 12pt;">En primer lugar, tenemos que 100 / 2 = 50. Con esto, sabemos ya la clase de la mediana:</span></p>
+<p><span style="font-size: 12pt;">Clase de la mediana = [66,69)</span></p>
+<p><span style="font-size: 12pt;">Con esta, utilizamos la fórmula anterior:</span></p>
+<p><span style="font-size: 12pt;">$$ Me = 66 + \frac{50-23}{42} 3 = 67.93 $$</span></p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice" id="id102">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ejercicio para casa</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta102_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b102" class="block iDevice_content">
+<p><span style="font-size: 12pt;">Calcula la mediana de los siguientes datos:</span></p>
+<p></p>
+<table class="exe-table" style="width: 40%; float: left;">
+<tbody>
+<tr>
+<th style="text-align: center;"></th>
+<th style="text-align: center;"><span style="font-size: 12pt;">Frecuencia</span></th>
+</tr>
+<tr>
+<th style="text-align: center;"><span style="font-size: 12pt;">[10,19)</span></th>
+<td style="text-align: center;"><span style="font-size: 12pt;">9</span></td>
+</tr>
+<tr>
+<th style="text-align: center;"><span style="font-size: 12pt;">[19,22)</span></th>
+<td style="text-align: center;"><span style="font-size: 12pt;">13</span></td>
+</tr>
+<tr>
+<th style="text-align: center;"><span style="font-size: 12pt;">[22,50)</span></th>
+<td style="text-align: center;"><span style="font-size: 12pt;">6</span></td>
+</tr>
+<tr>
+<th style="text-align: center;"><span style="font-size: 12pt;">[50,63)</span></th>
+<td style="text-align: center;"><span style="font-size: 12pt;">5</span></td>
+</tr>
+<tr>
+<th style="text-align: center;"><span style="font-size: 12pt;">[63,78)</span></th>
+<td style="text-align: center;"><span style="font-size: 12pt;">9</span></td>
+</tr>
+<tr>
+<th style="text-align: center;"><span style="font-size: 12pt;">[78,91)</span></th>
+<td style="text-align: center;"><span style="font-size: 12pt;">2</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="media.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="cuartiles_deciles_y_percentiles.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter"><script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script></footer></div>
+<script type="text/javascript" src="_silver_js.js"></script></body></html>

@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Cuartiles, Deciles y Percentiles </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.1.3 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript">$exe_i18n={previous:"Anterior",next:"Siguiente",show:"Mostrar",hide:"Ocultar",showFeedback:"Mostrar retroalimentación",hideFeedback:"Ocultar retroalimentación",correct:"Correcto",incorrect:"Incorrecto",menu:"Menú",download:"Descargar",print:"Imprimir"}</script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+	</head>
+<body class="exe-web-site" id="exe-node-17"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<section id="emptyHeader"></section>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Estadística</a></li>
+   <li><a href="1conceptos_elementales_de_estadstica.html" class="daddy">1.Conceptos elementales de estadística.</a>
+   <ul class="other-section">
+      <li><a href="muestreo.html" class="no-ch">Muestreo</a></li>
+      <li><a href="tipos_de_variables.html" class="no-ch">Tipos de variables</a></li>
+      <li><a href="tablas_de_frecuencia.html" class="no-ch">Tablas de frecuencia</a></li>
+      <li><a href="cuestionario.html" class="no-ch">Cuestionario</a></li>
+      <li><a href="actividades.html" class="daddy">Actividades</a>
+      <ul class="other-section">
+         <li><a href="solucin_actividad_1.html" class="no-ch">Solución actividad 1</a></li>
+         <li><a href="solucin_actividad_2.html" class="no-ch">Solución actividad 2</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+   <li><a href="2grficos_estadsticos.html" class="daddy">2.Gráficos estadísticos</a>
+   <ul class="other-section">
+      <li><a href="diagrama_de_barras.html" class="no-ch">Diagrama de barras</a></li>
+      <li><a href="histograma.html" class="no-ch">Histograma</a></li>
+      <li><a href="diagrama_de_sectores.html" class="no-ch">Diagrama de sectores</a></li>
+   </ul>
+   </li>
+   <li class="current-page-parent"><a href="3medidas_de_centralizacin_y_posicin.html" class="current-page-parent daddy">3.Medidas de centralización y posición</a>
+   <ul>
+      <li><a href="moda.html" class="no-ch">Moda</a></li>
+      <li><a href="media.html" class="no-ch">Media</a></li>
+      <li><a href="mediana.html" class="no-ch">Mediana</a></li>
+      <li id="active"><a href="cuartiles_deciles_y_percentiles.html" class="active no-ch">Cuartiles, Deciles y Percentiles</a></li>
+      <li><a href="repaso.html" class="no-ch">Repaso</a></li>
+   </ul>
+   </li>
+   <li><a href="4medidas_de_dispersin.html" class="daddy">4.Medidas de dispersión</a>
+   <ul class="other-section">
+      <li><a href="recorrido_o_rango.html" class="no-ch">Recorrido o Rango</a></li>
+      <li><a href="varianza_y_desviacin_tpica.html" class="no-ch">Varianza y Desviación típica</a></li>
+      <li><a href="coeficiente_de_variacin.html" class="no-ch">Coeficiente de Variación</a></li>
+      <li><a href="intepretaciones_conjunta_de_la_media_y_la_desviacin_tpica.html" class="no-ch">Intepretaciones conjunta de la media y la desviación típica</a></li>
+   </ul>
+   </li>
+   <li><a href="5distribuciones_bidimensionales.html" class="daddy">5.Distribuciones bidimensionales</a>
+   <ul class="other-section">
+      <li><a href="correlacin_lineal.html" class="no-ch">Correlación lineal</a></li>
+      <li><a href="tablas_de_contingencia.html" class="no-ch">Tablas de contingencia</a></li>
+   </ul>
+   </li>
+   <li><a href="6covarianza_y_coeficiente_de_correlacin_lineal.html" class="daddy">6.Covarianza y coeficiente de correlación lineal</a>
+   <ul class="other-section">
+      <li><a href="centro_de_gravedad.html" class="no-ch">Centro de gravedad</a></li>
+      <li><a href="covarianza.html" class="no-ch">Covarianza</a></li>
+      <li><a href="coeficiente_de_correlacin_lineal.html" class="no-ch">Coeficiente de correlación lineal</a></li>
+      <li><a href="actividades0.html" class="no-ch">Actividades</a></li>
+      <li><a href="repaso0.html" class="no-ch">Repaso</a></li>
+   </ul>
+   </li>
+   <li><a href="7_recta_de_regresin_lineal.html" class="daddy">7. Recta de regresión lineal</a>
+   <ul class="other-section">
+      <li><a href="actividades1.html" class="daddy">Actividades</a>
+      <ul class="other-section">
+         <li><a href="solucin_actividad_10.html" class="no-ch">Solución actividad 1</a></li>
+         <li><a href="solucin_actividad_20.html" class="no-ch">Solución actividad 2</a></li>
+         <li><a href="solucin_actividad_3.html" class="no-ch">Solución actividad 3</a></li>
+      </ul>
+      </li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="mediana.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="repaso.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Cuartiles, Deciles y Percentiles</h1></header>
+<article class="iDevice_wrapper objectivesIdevice em_iDevice" id="id103">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Introducción</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta103_43_2" class="block iDevice_content">
+<p><span style="font-size: 12pt;">Imagínate que has suspendido tres asignaturas y se lo tienes que decir a tu familia. ¿Cómo se lo dirías?</span></p>
+<p><span style="font-size: 12pt;">Seguramente dirías que el 50% de la clase ha suspendido 3 o más asignaturas, ¿no?. Es decir, te estas posicionando con respecto a la clase para ver donde te encuentras, si más cerca de los que no han suspendido ninguna, o más cerca de los que han suspendido muchas. </span></p>
+<p><span style="font-size: 12pt;">Pues lo que estás haciendo (sin saberlo), es calculando medidas de posición. Vamos a ver algunas de ellas ahora. </span></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper objectivesIdevice em_iDevice" id="id104">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Definición</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta104_44_2" class="block iDevice_content">
+<div id="title-mainmenu-wrap"><span style="font-size: 12pt;">Los <strong>cuartiles</strong> <span style="font-weight: normal;">son los<strong> tres valores</strong> </span><span style="font-weight: normal;">de la variable que dividen a un conjunto ordenado de datos en <strong>cuatro partes iguales.</strong> </span><span style="font-weight: normal;"> </span></span></div>
+<section>
+<div class="cContContenido">
+<p class="a"><span style="font-size: 12pt;"><strong>Q<sub>1</sub>, Q<sub>2</sub> y Q<sub>3</sub></strong> determinan los valores correspondientes al <strong>25%, al 50% y al 75%</strong> de los datos.</span></p>
+<p class="a"><span style="font-size: 12pt;"><strong>Q<sub>2</sub></strong> coincide con la mediana<strong>.</strong></span></p>
+<p class="a"><span style="font-size: 12pt;"><strong></strong>_________________________________________________________________________________________</span></p>
+<p class="a"><span style="font-size: 12pt;">Los <strong>deciles</strong> son los <strong>nueve valores</strong> que dividen la serie de<strong> </strong>datos<strong> </strong>en <strong>diez partes iguales</strong>.</span></p>
+<p class="a"><span style="font-size: 12pt;">Los <strong>deciles</strong> dan los valores correspondientes al 10%, al 20%... y al 90% de los datos.</span></p>
+<p class="a"><span style="font-size: 12pt;"><strong>D<sub>5</sub></strong> coincide con la mediana.</span></p>
+<p class="a"><span style="font-size: 12pt;">_________________________________________________________________________________________</span></p>
+<p class="a"><span style="font-size: 12pt;">Los <strong>percentiles</strong> son los <strong>99 valores</strong> que dividen la serie de datos en <strong>100 partes iguales</strong>.</span></p>
+<p class="a"><span style="font-size: 12pt;">Los <strong>percentiles</strong> dan los valores correspondientes al 1%, al 2%... y al 99% de los datos.</span></p>
+<p class="a"><span style="font-size: 12pt;"><strong>P<sub>50</sub></strong> coincide con la mediana.</span></p>
+<p class="a"><span style="font-size: 12pt;"><strong>P<sub>50</sub></strong> coincide con <strong>D<sub>5</sub>.</strong></span></p>
+</div>
+</section>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper objectivesIdevice em_iDevice" id="id105">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Proceso para calcular cuartiles</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta105_45_2" class="block iDevice_content">
+<p><span style="font-size: 12pt;"><strong>Cuando los datos no están agrupados:</strong></span></p>
+<p><span style="font-size: 12pt;"><strong></strong></span></p>
+<p><span style="font-size: 12pt;">1.Ordenamos los datos de mayor a menor.</span></p>
+<p><span style="font-size: 12pt;">2. Buscamos el lugar que ocupa cada cuartil mediante la expresión</span></p>
+<p><span style="font-size: 12pt;">$$ \frac{k \cdot N}{4}, $$ k = 1,2,3</span></p>
+<p><span style="font-size: 12pt;"></span></p>
+<p><span style="font-size: 12pt;">2.1 Si el conjunto tiene un número impar de datos, seleccionamos el cuartil correspondiente.</span></p>
+<p><span style="font-size: 12pt;">2.2 Si el conjunto tiene un número par de datos, cogemos el número que nos indica la fórmula anterior, y su siguiente, y calculamos la media de ambos.</span></p>
+<p><span style="font-size: 12pt;"></span></p>
+<p><span style="font-size: 12pt;"><strong>Cuando los datos están agrupados:</strong></span></p>
+<p><span style="font-size: 12pt;"></span></p>
+<p><span style="font-size: 12pt;">En primer lugar buscamos la clase donde se encuentra en la tabla de frecuencias, utilizando la fórmula anterior. Una vez hecho esto, calculamos el cuartil mediante:</span></p>
+<p><span style="font-size: 12pt;">$$ Q_k = L_i + \frac{\frac{k \cdot N}{4}-F_{i-1}}{f_i} \cdot a_i $$</span></p>
+<p><span style="font-size: 12pt;">para k =1,2,3, donde:</span></p>
+<table style="width: 52.6108%; float: left;">
+<tbody>
+<tr>
+<td style="width: 19%;"><span style="font-size: 12pt;">$$L_i$$</span></td>
+<td style="width: 104.658%;"><span style="font-size: 12pt;">es el límite inferior de la clase donde se encuentra el cuartil.</span></td>
+</tr>
+<tr>
+<td style="width: 19%;"><span style="font-size: 12pt;">$$N$$</span></td>
+<td style="width: 104.658%;"><span style="font-size: 12pt;">es la suma de las frecuencias absolutas.</span></td>
+</tr>
+<tr>
+<td style="width: 19%;"><span style="font-size: 12pt;">$$F_{i-1}$$</span></td>
+<td style="width: 104.658%;"><span style="font-size: 12pt;">es la frecuencia acumulada anterior a la clase <span class="a">del cuartil</span>. </span></td>
+</tr>
+<tr>
+<td style="width: 19%;"><span style="font-size: 12pt;">$$a_i$$</span></td>
+<td style="width: 104.658%;"><span style="font-size: 12pt;">es la amplitud de la clase.</span></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 12pt;"></span></p>
+<p><span style="font-size: 12pt;"></span></p>
+<p><span style="font-size: 10pt;"></span></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice" id="id106">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ejercicio Resuelto</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta106_148" class="block story iDevice_content">
+<p><span style="font-size: 12pt;">Calcula los cuartiles de los siguientes datos:</span></p>
+<table class="exe-table" style="width: 44.2515%; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 18.6186%;"></td>
+<th style="width: 19.5195%; text-align: center;"><span style="font-size: 12pt;">Frecuencia</span></th>
+<th style="width: 50.3003%; text-align: center;"><span style="font-size: 12pt;">Frecuencia acumulada</span></th>
+</tr>
+<tr>
+<th style="width: 18.6186%; text-align: center;"><span style="font-size: 12pt;">[50,60)</span></th>
+<td style="width: 19.5195%; text-align: center;"><span style="font-size: 12pt;">8</span></td>
+<td style="width: 50.3003%; text-align: center;"><span style="font-size: 12pt;">8</span></td>
+</tr>
+<tr>
+<th style="width: 18.6186%; text-align: center;"><span style="font-size: 12pt;">[60,70)</span></th>
+<td style="width: 19.5195%; text-align: center;"><span style="font-size: 12pt;">10</span></td>
+<td style="width: 50.3003%; text-align: center;"><span style="font-size: 12pt;">18</span></td>
+</tr>
+<tr>
+<th style="width: 18.6186%; text-align: center;"><span style="font-size: 12pt;">[70,80)</span></th>
+<td style="width: 19.5195%; text-align: center;"><span style="font-size: 12pt;">16</span></td>
+<td style="width: 50.3003%; text-align: center;"><span style="font-size: 12pt;">34</span></td>
+</tr>
+<tr>
+<th style="width: 18.6186%; text-align: center;"><span style="font-size: 12pt;">[80,90)</span></th>
+<td style="width: 19.5195%; text-align: center;"><span style="font-size: 12pt;">14</span></td>
+<td style="width: 50.3003%; text-align: center;"><span style="font-size: 12pt;">48</span></td>
+</tr>
+<tr>
+<th style="width: 18.6186%; text-align: center;"><span style="font-size: 12pt;">[90,100)</span></th>
+<td style="width: 19.5195%; text-align: center;"><span style="font-size: 12pt;">10</span></td>
+<td style="width: 50.3003%; text-align: center;"><span style="font-size: 12pt;">58</span></td>
+</tr>
+<tr>
+<th style="width: 18.6186%; text-align: center;"><span style="font-size: 12pt;">[100,110)</span></th>
+<td style="width: 19.5195%; text-align: center;"><span style="font-size: 12pt;">5</span></td>
+<td style="width: 50.3003%; text-align: center;"><span style="font-size: 12pt;">63</span></td>
+</tr>
+<tr>
+<th style="width: 18.6186%; text-align: center;"><span style="font-size: 12pt;">[110,120)</span></th>
+<td style="width: 19.5195%; text-align: center;"><span style="font-size: 12pt;">2</span></td>
+<td style="width: 50.3003%; text-align: center;"><span style="font-size: 12pt;">65</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="taquesQuestion0b106" class="block iDevice_content">
+
+</section>
+<form name="feedback-form-quesFeedback0b106" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b106text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b106" value="Mostrar retroalimentación" class="feedbackbutton" onclick="$exe.toggleFeedback(this,true);return false" /></p>
+</div>
+<section id="feedback-quesFeedback0b106" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p><span style="font-size: 12pt;"><strong>Cálculo del primer cuartil:</strong></span></p>
+<p><span style="font-size: 12pt;">$$ \frac{65 \cdot 1}{ 4} = 16.25 $$</span></p>
+<p><span style="font-size: 12pt;">$$ Q_1 = 60 + \frac{16.25-8}{10} \cdot 10 = 68.25 $$</span></p>
+<p><span style="font-size: 12pt;"><strong>Cálculo del segundo cuartil:</strong></span></p>
+<p><span style="font-size: 12pt;">$$ \frac{65 \cdot 2}{ 4} = 35.5 $$</span></p>
+<p><span style="font-size: 12pt;">$$ Q_2 = 70 + \frac{32.5-18}{16} \cdot 10 = 70.06 $$</span></p>
+<p><span style="font-size: 12pt;"><strong></strong><strong>Cálculo del tercer cuartil:</strong></span></p>
+<p><span style="font-size: 12pt;">$$ \frac{65 \cdot 3}{ 4} = 48.75 $$</span></p>
+<p><span style="font-size: 12pt;">$$ Q_3 = 90 + \frac{48.75-48}{10} \cdot 10 = 90.75 $$</span></p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id107">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Proceso para calcular deciles</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta107_47_2" class="block iDevice_content">
+<p><span style="font-size: 12pt;"><strong>Cuando los datos no están agrupados:</strong></span></p>
+<p><span style="font-size: 12pt;"><strong></strong></span></p>
+<p><span style="font-size: 12pt;">1.Ordenamos los datos de mayor a menor.</span></p>
+<p><span style="font-size: 12pt;">2. Buscamos el lugar que ocupa cada decil mediante la expresión</span></p>
+<p><span style="font-size: 12pt;">$$ \frac{k \cdot N}{10}, $$ k = 1,2,...,9.</span></p>
+<p><span style="font-size: 12pt;"></span></p>
+<p><span style="font-size: 12pt;">2.1 Si el conjunto tiene un número impar de datos, seleccionamos el decil correspondiente.</span></p>
+<p><span style="font-size: 12pt;">2.2 Si el conjunto tiene un número par de datos, cogemos el número que nos indica la fórmula anterior, y su siguiente, y calculamos la media de ambos.</span></p>
+<p><span style="font-size: 12pt;"></span></p>
+<p><span style="font-size: 12pt;"><strong>Cuando los datos están agrupados:</strong></span></p>
+<p><span style="font-size: 12pt;"></span></p>
+<p><span style="font-size: 12pt;">En primer lugar buscamos la clase donde se encuentra en la tabla de frecuencias, utilizando la fórmula anterior. Una vez hecho esto, calculamos el decil mediante:</span></p>
+<p><span style="font-size: 12pt;">$$ D_k = L_i + \frac{\frac{k \cdot N}{10}-F_{i-1}}{f_i} \cdot a_i $$</span></p>
+<p><span style="font-size: 12pt;">para k =1,2,...,9, donde:</span></p>
+<table style="width: 52.6108%; float: left;">
+<tbody>
+<tr>
+<td style="width: 19%;"><span style="font-size: 12pt;">$$L_i$$</span></td>
+<td style="width: 104.658%;"><span style="font-size: 12pt;">es el límite inferior de la clase donde se encuentra el cuartil.</span></td>
+</tr>
+<tr>
+<td style="width: 19%;"><span style="font-size: 12pt;">$$N$$</span></td>
+<td style="width: 104.658%;"><span style="font-size: 12pt;">es la suma de las frecuencias absolutas.</span></td>
+</tr>
+<tr>
+<td style="width: 19%;"><span style="font-size: 12pt;">$$F_{i-1}$$</span></td>
+<td style="width: 104.658%;"><span style="font-size: 12pt;">es la frecuencia acumulada anterior a la clase <span class="a">del cuartil</span>. </span></td>
+</tr>
+<tr>
+<td style="width: 19%;"><span style="font-size: 12pt;">$$a_i$$</span></td>
+<td style="width: 104.658%;"><span style="font-size: 12pt;">es la amplitud de la clase.</span></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 12pt;"></span></p>
+<p><span style="font-size: 12pt;"></span></p>
+<p><span style="font-size: 10pt;"></span></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice" id="id108">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ejercicio Resuelto </h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta108_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b108" class="block iDevice_content">
+<p><span style="font-size: 12pt;">Vamos a calcular 3 deciles de los siguientes datos: </span></p>
+<table class="exe-table" style="width: 44.2515%; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 18.6186%;"></td>
+<th style="width: 19.5195%; text-align: center;"><span style="font-size: 12pt;">Frecuencia</span></th>
+<th style="width: 50.3003%; text-align: center;"><span style="font-size: 12pt;">Frecuencia acumulada</span></th>
+</tr>
+<tr>
+<th style="width: 18.6186%; text-align: center;"><span style="font-size: 12pt;">[50,60)</span></th>
+<td style="width: 19.5195%; text-align: center;"><span style="font-size: 12pt;">8</span></td>
+<td style="width: 50.3003%; text-align: center;"><span style="font-size: 12pt;">8</span></td>
+</tr>
+<tr>
+<th style="width: 18.6186%; text-align: center;"><span style="font-size: 12pt;">[60,70)</span></th>
+<td style="width: 19.5195%; text-align: center;"><span style="font-size: 12pt;">10</span></td>
+<td style="width: 50.3003%; text-align: center;"><span style="font-size: 12pt;">18</span></td>
+</tr>
+<tr>
+<th style="width: 18.6186%; text-align: center;"><span style="font-size: 12pt;">[70,80)</span></th>
+<td style="width: 19.5195%; text-align: center;"><span style="font-size: 12pt;">16</span></td>
+<td style="width: 50.3003%; text-align: center;"><span style="font-size: 12pt;">34</span></td>
+</tr>
+<tr>
+<th style="width: 18.6186%; text-align: center;"><span style="font-size: 12pt;">[80,90)</span></th>
+<td style="width: 19.5195%; text-align: center;"><span style="font-size: 12pt;">14</span></td>
+<td style="width: 50.3003%; text-align: center;"><span style="font-size: 12pt;">48</span></td>
+</tr>
+<tr>
+<th style="width: 18.6186%; text-align: center;"><span style="font-size: 12pt;">[90,100)</span></th>
+<td style="width: 19.5195%; text-align: center;"><span style="font-size: 12pt;">10</span></td>
+<td style="width: 50.3003%; text-align: center;"><span style="font-size: 12pt;">58</span></td>
+</tr>
+<tr>
+<th style="width: 18.6186%; text-align: center;"><span style="font-size: 12pt;">[100,110)</span></th>
+<td style="width: 19.5195%; text-align: center;"><span style="font-size: 12pt;">5</span></td>
+<td style="width: 50.3003%; text-align: center;"><span style="font-size: 12pt;">63</span></td>
+</tr>
+<tr>
+<th style="width: 18.6186%; text-align: center;"><span style="font-size: 12pt;">[110,120)</span></th>
+<td style="width: 19.5195%; text-align: center;"><span style="font-size: 12pt;">2</span></td>
+<td style="width: 50.3003%; text-align: center;"><span style="font-size: 12pt;">65</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<form name="feedback-form-quesFeedback0b108" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b108text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b108" value="Mostrar retroalimentación" class="feedbackbutton" onclick="$exe.toggleFeedback(this,true);return false" /></p>
+</div>
+<section id="feedback-quesFeedback0b108" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p><span style="font-size: 12pt;"><strong>Cálculo primer decil:</strong></span></p>
+<p><span style="font-size: 12pt;">$$ \frac{65 \cdot 1}{10} = 6.5 $$</span></p>
+<p><span style="font-size: 12pt;">$$ D_1 = 50 + \frac{6.5-0}{8} \cdot 10 = 58.12 $$ </span></p>
+<p><span style="font-size: 12pt;"><strong>Cálculo tercer decil:</strong></span></p>
+<p><span style="font-size: 12pt;">$$ \frac{65 \cdot 3}{10} = 19.5 $$</span></p>
+<p><span style="font-size: 12pt;">$$ D_3 = 70 + \frac{19.5-18}{16} \cdot 10 = 70.94 $$ </span></p>
+<p><span style="font-size: 12pt;"><strong>Cálculo quinto decil:</strong></span></p>
+<p><span style="font-size: 12pt;">$$ \frac{65 \cdot 5}{10} = 32.5 $$</span></p>
+<p><span style="font-size: 12pt;">$$ D_5 = 70 + \frac{32.5-18}{16} \cdot 10 = 79.06 $$ </span></p>
+<p><span style="font-size: 12pt;"><strong>Cálculo octavo decil:</strong></span></p>
+<p><span style="font-size: 12pt;">$$ \frac{65 \cdot 8}{10} = 52 $$</span></p>
+<p><span style="font-size: 12pt;">$$ D_8 = 90 + \frac{52-48}{10} \cdot 10 = 94 $$ </span></p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper preknowledgeIdevice em_iDevice" id="id109">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Proceso para calcular percentiles</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta109_48_2" class="block iDevice_content">
+<p><span style="font-size: 12pt;"><strong>Cuando los datos no están agrupados:</strong></span></p>
+<p><span style="font-size: 12pt;"><strong></strong></span></p>
+<p><span style="font-size: 12pt;">1.Ordenamos los datos de mayor a menor.</span></p>
+<p><span style="font-size: 12pt;">2. Buscamos el lugar que ocupa cada percentil mediante la expresión</span></p>
+<p><span style="font-size: 12pt;">$$ \frac{k \cdot N}{100}, $$ k = 1,2,..,99.</span></p>
+<p><span style="font-size: 12pt;"></span></p>
+<p><span style="font-size: 12pt;">2.1 Si el conjunto tiene un número impar de datos, seleccionamos el percentil correspondiente.</span></p>
+<p><span style="font-size: 12pt;">2.2 Si el conjunto tiene un número par de datos, cogemos el número que nos indica la fórmula anterior, y su siguiente, y calculamos la media de ambos.</span></p>
+<p><span style="font-size: 12pt;"></span></p>
+<p><span style="font-size: 12pt;"><strong>Cuando los datos están agrupados:</strong></span></p>
+<p><span style="font-size: 12pt;"></span></p>
+<p><span style="font-size: 12pt;">En primer lugar buscamos la clase donde se encuentra en la tabla de frecuencias, utilizando la fórmula anterior. Una vez hecho esto, calculamos el percentil mediante:</span></p>
+<p><span style="font-size: 12pt;">$$ P_k = L_i + \frac{\frac{k \cdot N}{100}-F_{i-1}}{f_i} \cdot a_i $$</span></p>
+<p><span style="font-size: 12pt;">para k =1,2,3, donde:</span></p>
+<table style="width: 52.6108%; float: left;">
+<tbody>
+<tr>
+<td style="width: 19%;"><span style="font-size: 12pt;">$$L_i$$</span></td>
+<td style="width: 104.658%;"><span style="font-size: 12pt;">es el límite inferior de la clase donde se encuentra el cuartil.</span></td>
+</tr>
+<tr>
+<td style="width: 19%;"><span style="font-size: 12pt;">$$N$$</span></td>
+<td style="width: 104.658%;"><span style="font-size: 12pt;">es la suma de las frecuencias absolutas.</span></td>
+</tr>
+<tr>
+<td style="width: 19%;"><span style="font-size: 12pt;">$$F_{i-1}$$</span></td>
+<td style="width: 104.658%;"><span style="font-size: 12pt;">es la frecuencia acumulada anterior a la clase <span class="a">del cuartil</span>. </span></td>
+</tr>
+<tr>
+<td style="width: 19%;"><span style="font-size: 12pt;">$$a_i$$</span></td>
+<td style="width: 104.658%;"><span style="font-size: 12pt;">es la amplitud de la clase.</span></td>
+</tr>
+</tbody>
+</table>
+<p><span style="font-size: 12pt;"></span></p>
+<p><span style="font-size: 12pt;"></span></p>
+<p><span style="font-size: 10pt;"></span></p>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper EjercicioresueltofpdIdevice em_iDevice" id="id110">
+<div class="iDevice emphasis_ejercicioresueltofpd" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ejercicio Resuelto</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<section id="ta110_148" class="block story iDevice_content">
+
+</section>
+<section id="taquesQuestion0b110" class="block iDevice_content">
+<p><span style="font-size: 12pt;">Vamos a calcular el percentil 35 y 60 de los siguientes datos:</span></p>
+<table class="exe-table" style="width: 44.2515%; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td style="width: 18.6186%;"></td>
+<th style="width: 19.5195%; text-align: center;"><span style="font-size: 12pt;">Frecuencia</span></th>
+<th style="width: 50.3003%; text-align: center;"><span style="font-size: 12pt;">Frecuencia acumulada</span></th>
+</tr>
+<tr>
+<th style="width: 18.6186%; text-align: center;"><span style="font-size: 12pt;">[50,60)</span></th>
+<td style="width: 19.5195%; text-align: center;"><span style="font-size: 12pt;">8</span></td>
+<td style="width: 50.3003%; text-align: center;"><span style="font-size: 12pt;">8</span></td>
+</tr>
+<tr>
+<th style="width: 18.6186%; text-align: center;"><span style="font-size: 12pt;">[60,70)</span></th>
+<td style="width: 19.5195%; text-align: center;"><span style="font-size: 12pt;">10</span></td>
+<td style="width: 50.3003%; text-align: center;"><span style="font-size: 12pt;">18</span></td>
+</tr>
+<tr>
+<th style="width: 18.6186%; text-align: center;"><span style="font-size: 12pt;">[70,80)</span></th>
+<td style="width: 19.5195%; text-align: center;"><span style="font-size: 12pt;">16</span></td>
+<td style="width: 50.3003%; text-align: center;"><span style="font-size: 12pt;">34</span></td>
+</tr>
+<tr>
+<th style="width: 18.6186%; text-align: center;"><span style="font-size: 12pt;">[80,90)</span></th>
+<td style="width: 19.5195%; text-align: center;"><span style="font-size: 12pt;">14</span></td>
+<td style="width: 50.3003%; text-align: center;"><span style="font-size: 12pt;">48</span></td>
+</tr>
+<tr>
+<th style="width: 18.6186%; text-align: center;"><span style="font-size: 12pt;">[90,100)</span></th>
+<td style="width: 19.5195%; text-align: center;"><span style="font-size: 12pt;">10</span></td>
+<td style="width: 50.3003%; text-align: center;"><span style="font-size: 12pt;">58</span></td>
+</tr>
+<tr>
+<th style="width: 18.6186%; text-align: center;"><span style="font-size: 12pt;">[100,110)</span></th>
+<td style="width: 19.5195%; text-align: center;"><span style="font-size: 12pt;">5</span></td>
+<td style="width: 50.3003%; text-align: center;"><span style="font-size: 12pt;">63</span></td>
+</tr>
+<tr>
+<th style="width: 18.6186%; text-align: center;"><span style="font-size: 12pt;">[110,120)</span></th>
+<td style="width: 19.5195%; text-align: center;"><span style="font-size: 12pt;">2</span></td>
+<td style="width: 50.3003%; text-align: center;"><span style="font-size: 12pt;">65</span></td>
+</tr>
+</tbody>
+</table>
+</section>
+<form name="feedback-form-quesFeedback0b110" action="#" onsubmit="return false" class="feedback-form">
+<div class="block iDevice_buttons feedback-button js-required">
+<p><script type="text/javascript">var feedbackquesFeedback0b110text = "Mostrar retroalimentación";</script><input type="button" name="toggle-feedback-quesFeedback0b110" value="Mostrar retroalimentación" class="feedbackbutton" onclick="$exe.toggleFeedback(this,true);return false" /></p>
+</div>
+<section id="feedback-quesFeedback0b110" class="feedback js-feedback js-hidden">
+<h1 class="js-sr-av">Retroalimentación</h1>
+<p><span style="font-size: 12pt;"><strong>Percentil 35:</strong></span></p>
+<p><span style="font-size: 12pt;">$$ \frac{65 \cdot 35}{100} = 22.75 $$</span></p>
+<p><span style="font-size: 12pt;">$$ P_{35} = 70 + \frac{22.75-18}{16} \cdot 10 = 72.97 $$ </span></p>
+<p><span style="font-size: 12pt;"><strong>Percentil 60:</strong></span></p>
+<p><span style="font-size: 12pt;">$$ \frac{65 \cdot 60}{100} = 39 $$</span></p>
+<p><span style="font-size: 12pt;">$$ P_{60} = 80 + \frac{239-34}{14} \cdot 10 = 83.57 $$ </span></p></section>
+</form>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper CitasparapensarfpdIdevice em_iDevice" id="id111">
+<div class="iDevice emphasis_citasparapensarfpd" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Ejercicio para casa</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta111_130" class="block iDevice_content">
+<p><span style="font-size: 12pt;">Calcula todos los cuartiles, los deciles 2 y 7, y los percentiles 5, 96, 99 de los siguientes datos:</span></p>
+<table class="exe-table" style="width: 40%; margin-left: auto; margin-right: auto;">
+<tbody>
+<tr>
+<td></td>
+<th style="text-align: center;"><span style="font-size: 12pt;">Freciencia</span></th>
+</tr>
+<tr>
+<th style="text-align: center;"><span style="font-size: 12pt;">[5,10)</span></th>
+<td style="text-align: center;"><span style="font-size: 12pt;">18</span></td>
+</tr>
+<tr>
+<th style="text-align: center;"><span style="font-size: 12pt;">[10,12)</span></th>
+<td style="text-align: center;"><span style="font-size: 12pt;">9</span></td>
+</tr>
+<tr>
+<th style="text-align: center;"><span style="font-size: 12pt;">[13,20)</span></th>
+<td style="text-align: center;"><span style="font-size: 12pt;">21</span></td>
+</tr>
+<tr>
+<th style="text-align: center;"><span style="font-size: 12pt;">[20,26)</span></th>
+<td style="text-align: center;"><span style="font-size: 12pt;">15</span></td>
+</tr>
+<tr>
+<th style="text-align: center;"><span style="font-size: 12pt;">[26,31)</span></th>
+<td style="text-align: center;"><span style="font-size: 12pt;">6</span></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="mediana.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="repaso.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<footer id="siteFooter"><script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script></footer></div>
+<script type="text/javascript" src="_silver_js.js"></script></body></html>

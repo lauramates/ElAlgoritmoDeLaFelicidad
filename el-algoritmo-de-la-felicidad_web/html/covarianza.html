@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mnwvomfv-udv1w2sro">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0-rc1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>Covarianza</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../idevices/casestudy/casestudy.js"></script><link rel="stylesheet" href="../idevices/casestudy/casestudy.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mnwvomfv-udv1w2sro" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node daddy">Estadística</a>
+<ul class="other-section">
+<li> <a href="../html/mision-00.html" class="no-ch">Misión #00</a>
+</li>
+<li> <a href="../html/mision-01.html" class="no-ch">Misión #01</a>
+</li>
+<li> <a href="../html/mision-02.html" class="no-ch">Misión #02</a>
+</li>
+<li> <a href="../html/mision-03-conceptos-elementales-de-estadistica.html" class="daddy">Misión #03: Conceptos elementales de estadística.</a>
+<ul class="other-section">
+<li> <a href="../html/muestreo.html" class="no-ch">Muestreo</a>
+</li>
+<li> <a href="../html/tipos-de-variables.html" class="no-ch">Tipos de variables</a>
+</li>
+<li> <a href="../html/tablas-de-frecuencia.html" class="no-ch">Tablas de frecuencia</a>
+</li>
+<li> <a href="../html/mision-04.html" class="no-ch">Misión #04</a>
+</li>
+<li> <a href="../html/mision-05.html" class="no-ch">Misión #05</a>
+</li>
+<li> <a href="../html/mision-06.html" class="no-ch">Misión #06</a>
+</li>
+<li> <a href="../html/mision-07.html" class="no-ch">Misión #07</a>
+</li>
+<li> <a href="../html/mision-08.html" class="no-ch">Misión #08</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/mision-09-parametros-estadisticos.html" class="daddy">Misión #09: Parámetros estadísticos</a>
+<ul class="other-section">
+<li> <a href="../html/media.html" class="no-ch">Media</a>
+</li>
+<li> <a href="../html/varianza-y-desviacion-tipica.html" class="no-ch">Varianza y Desviación típica</a>
+</li>
+<li> <a href="../html/coeficiente-de-variacion.html" class="no-ch">Coeficiente de Variación</a>
+</li>
+<li> <a href="../html/mision-10.html" class="no-ch">Misión #10</a>
+</li>
+<li> <a href="../html/mision-11.html" class="no-ch">Misión #11</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/mision-12-parametros-de-posicion-de-datos.html" class="daddy">Misión #12: Parámetros de posición de datos</a>
+<ul class="other-section">
+<li> <a href="../html/mediana.html" class="no-ch">Mediana</a>
+</li>
+<li> <a href="../html/cuartiles.html" class="no-ch">Cuartiles</a>
+</li>
+<li> <a href="../html/percentiles.html" class="no-ch">Percentiles</a>
+</li>
+<li> <a href="../html/mision-13.html" class="no-ch">Misión #13</a>
+</li>
+<li> <a href="../html/mision-14.html" class="no-ch">Misión #14</a>
+</li>
+<li> <a href="../html/mision-121-otros-parametros-de-posicion-de-datos-a.html" class="daddy">Misión #12.1  Otros parámetros de posición de datos agrupados</a>
+<ul class="other-section">
+<li> <a href="../html/poligono-de-frecuencias-acumuladas.html" class="no-ch">Polígono de frecuencias acumuladas</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li> <a href="../html/mision-15-graficos-estadisticos.html" class="daddy">Misión #15: Gráficos estadísticos</a>
+<ul class="other-section">
+<li> <a href="../html/diagrama-de-barras.html" class="no-ch">Diagrama de barras</a>
+</li>
+<li> <a href="../html/histograma.html" class="no-ch">Histograma</a>
+</li>
+<li> <a href="../html/diagrama-de-sectores.html" class="no-ch">Diagrama de sectores</a>
+</li>
+<li> <a href="../html/diagrama-de-cajas-y-bigotes.html" class="no-ch">Diagrama de cajas y bigotes</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/mision-16.html" class="no-ch">Misión #16</a>
+</li>
+<li> <a href="../html/mision-17.html" class="no-ch">Misión #17</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/estadistica-bidimensional.html" class="daddy">Estadística bidimensional</a>
+<ul class="other-section">
+<li> <a href="../html/correlacion-lineal.html" class="no-ch">Correlación lineal</a>
+</li>
+<li class="current-page-parent"> <a href="../html/parametros-asociados.html" class="daddy">Parámetros asociados</a>
+<ul class="other-section">
+<li> <a href="../html/centro-de-gravedad.html" class="no-ch">Centro de gravedad</a>
+</li>
+<li class="active"> <a href="../html/covarianza.html" class="active no-ch">Covarianza</a>
+</li>
+<li> <a href="../html/coeficiente-de-correlacion-lineal.html" class="no-ch">Coeficiente de correlación lineal</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/recta-de-regresion-lineal.html" class="daddy">Recta de regresión lineal</a>
+<ul class="other-section">
+<li> <a href="../html/hay-dos-rectas-de-regresion.html" class="no-ch">Hay dos rectas de regresión</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/tablas-de-contingencia.html" class="no-ch">Tablas de contingencia</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/guia-didactica.html" class="daddy">Guía didáctica</a>
+<ul class="other-section">
+<li> <a href="../html/1-justificacion.html" class="no-ch">1. Justificación</a>
+</li>
+<li> <a href="../html/2-referencia-a-las-competencias-clave.html" class="no-ch">2. Referencia a las competencias clave</a>
+</li>
+<li> <a href="../html/3-referencia-curricular.html" class="no-ch">3. Referencia curricular</a>
+</li>
+<li> <a href="../html/4-guia-de-uso-para-el-aula.html" class="no-ch">4. Guía de uso para el aula</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-mnwvomfv-udv1w2sro" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">El algoritmo de la felicidad</p>
+<p class="package-subtitle">Redes sociales vs Horas de sueño</p></div>
+<div class="page-header"><h1 class="page-title">Covarianza</h1></div>
+</header><div id="page-content-page-mnwvomfv-udv1w2sro" class="page-content">
+<article id="block-mmufljn9-v3rb2muln" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/objectives.png" alt="">
+</div>
+<h1 class="box-title">Definición</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mmufljn9-7mk04nkiz" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mmufljn9-7mk04nkiz&quot;}">
+<div class="exe-text-template">
+    <div style="border: 2px solid #405DE6; padding: 25px; border-radius: 15px; background-color: #f8f9ff; font-family: sans-serif;">
+<h3 style="color: #405de6; margin-top: 0; font-size: 1.3em;">📐 Covarianza</h3>
+<p style="font-size: 12pt;">La <strong>covarianza</strong> mide la <strong>variación conjunta</strong> de dos variables, es decir, cómo cambian una respecto a la otra.</p>
+<div style="text-align: center; margin: 20px 0; font-weight: bold; font-size: 1.2em; color: #405de6;">$\boldsymbol{\sigma_{xy} = \frac{\sum (x_{i} - \bar{x})(y_{i} - \bar{y})}{N} = \frac{\sum x_{i}y_{i}}{N} - \bar{x}\bar{y}}$</div>
+<div style="margin-top: 10px; border-top: 1px solid #A9CCE3; padding-top: 20px;">
+<p style="font-size: 12pt;">Según su valor, podemos interpretar:</p>
+<ul style="font-size: 12pt; margin-top: 10px;">
+<li>📈 <strong>Positiva:</strong> ambas variables tienden a aumentar juntas</li>
+<li>📉 <strong>Negativa:</strong> una aumenta mientras la otra disminuye</li>
+<li>➖ <strong>Cercana a 0:</strong> no hay relación lineal clara</li>
+</ul>
+</div>
+<div style="margin-top: 15px; border-top: 1px solid #A9CCE3; padding-top: 20px; display: flex; align-items: flex-start;">
+<div style="background-color: #e1306c; color: white; min-width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-weight: bold; margin-right: 15px;">!</div>
+<div><strong style="color: #e1306c; font-size: 12pt;">Importante:</strong>
+<p style="font-size: 12pt; margin-top: 5px;">El valor de la covarianza depende de las unidades de medida, por lo que no permite comparar directamente distintas relaciones.</p>
+</div>
+</div>
+</div>
+<p><br /></p>
+<p><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"></span><span style="font-family: arial, helvetica, sans-serif; font-size: 12pt;"></span><br /></p>
+</div>
+</div>
+</div>
+</article><article id="block-mmufljn9-xt0qv306k" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/book.png" alt="">
+</div>
+<h1 class="box-title">Caso práctico</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mmufljn9-9wh9tjl87" class="idevice_node casestudy" data-idevice-path="../idevices/casestudy/" data-idevice-type="casestudy" data-idevice-component-type="json" data-idevice-json-data="{&quot;id&quot;:&quot;idevice-mmufljn9-9wh9tjl87&quot;,&quot;typeGame&quot;:&quot;Case study&quot;,&quot;history&quot;:&quot;&lt;p&gt;&lt;span style=\&quot;font-size: 12pt;\&quot;&gt;&lt;em&gt;Utilizaremos los mismos datos que en el caso anterior.&lt;/em&gt;&lt;/span&gt;&lt;/p&gt;\n&lt;table style=\&quot;width: 331px;\&quot; height=\&quot;188\&quot;&gt;\n&lt;tbody&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;background-color: #bbd96d; text-align: center; width: 91px;\&quot;&gt;&lt;span style=\&quot;font-size: 12pt;\&quot;&gt;&lt;strong&gt;&lt;span style=\&quot;font-family: arial, helvetica, sans-serif;\&quot;&gt;Alumno&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt;\n&lt;td style=\&quot;background-color: #bbd96d; text-align: center; width: 147px;\&quot;&gt;&lt;span style=\&quot;font-size: 12pt;\&quot;&gt;&lt;strong&gt;&lt;span style=\&quot;font-family: arial, helvetica, sans-serif;\&quot;&gt;Tiempo uso&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt;\n&lt;td style=\&quot;background-color: #bbd96d; text-align: center; width: 71px;\&quot;&gt;&lt;span style=\&quot;font-size: 12pt;\&quot;&gt;&lt;strong&gt;&lt;span style=\&quot;font-family: arial, helvetica, sans-serif;\&quot;&gt;Horas sueño&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;background-color: #bbd96d; text-align: center; width: 91px;\&quot;&gt;&lt;span style=\&quot;font-size: 12pt;\&quot;&gt;&lt;strong&gt;&lt;span style=\&quot;font-family: arial, helvetica, sans-serif;\&quot;&gt;1&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt;\n&lt;td style=\&quot;background-color: #e2f2af; text-align: center; width: 147px;\&quot;&gt;&lt;span style=\&quot;font-size: 12pt; font-family: arial, helvetica, sans-serif;\&quot;&gt;15&lt;/span&gt;&lt;/td&gt;\n&lt;td style=\&quot;background-color: #e2f2af; text-align: center; width: 71px;\&quot;&gt;&lt;span style=\&quot;font-size: 12pt; font-family: arial, helvetica, sans-serif;\&quot;&gt;8&lt;/span&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;background-color: #bbd96d; text-align: center; width: 91px;\&quot;&gt;&lt;span style=\&quot;font-size: 12pt;\&quot;&gt;&lt;strong&gt;&lt;span style=\&quot;font-family: arial, helvetica, sans-serif;\&quot;&gt;2&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt;\n&lt;td style=\&quot;background-color: #e2f2af; text-align: center; width: 147px;\&quot;&gt;&lt;span style=\&quot;font-size: 12pt; font-family: arial, helvetica, sans-serif;\&quot;&gt;30&lt;/span&gt;&lt;/td&gt;\n&lt;td style=\&quot;background-color: #e2f2af; text-align: center; width: 71px;\&quot;&gt;&lt;span style=\&quot;font-size: 12pt; font-family: arial, helvetica, sans-serif;\&quot;&gt;7.5&lt;/span&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;background-color: #bbd96d; text-align: center; width: 91px;\&quot;&gt;&lt;span style=\&quot;font-size: 12pt;\&quot;&gt;&lt;strong&gt;&lt;span style=\&quot;font-family: arial, helvetica, sans-serif;\&quot;&gt;3&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt;\n&lt;td style=\&quot;background-color: #e2f2af; text-align: center; width: 147px;\&quot;&gt;&lt;span style=\&quot;font-size: 12pt; font-family: arial, helvetica, sans-serif;\&quot;&gt;45&lt;/span&gt;&lt;/td&gt;\n&lt;td style=\&quot;background-color: #e2f2af; text-align: center; width: 71px;\&quot;&gt;&lt;span style=\&quot;font-size: 12pt; font-family: arial, helvetica, sans-serif;\&quot;&gt;6.5&lt;/span&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;background-color: #bbd96d; text-align: center; width: 91px;\&quot;&gt;&lt;span style=\&quot;font-size: 12pt;\&quot;&gt;&lt;strong&gt;&lt;span style=\&quot;font-family: arial, helvetica, sans-serif;\&quot;&gt;4&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt;\n&lt;td style=\&quot;background-color: #e2f2af; text-align: center; width: 147px;\&quot;&gt;&lt;span style=\&quot;font-size: 12pt; font-family: arial, helvetica, sans-serif;\&quot;&gt;60&lt;/span&gt;&lt;/td&gt;\n&lt;td style=\&quot;background-color: #e2f2af; text-align: center; width: 71px;\&quot;&gt;&lt;span style=\&quot;font-size: 12pt; font-family: arial, helvetica, sans-serif;\&quot;&gt;6&lt;/span&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;tr&gt;\n&lt;td style=\&quot;background-color: #bbd96d; text-align: center; width: 91px;\&quot;&gt;&lt;span style=\&quot;font-size: 12pt;\&quot;&gt;&lt;strong&gt;&lt;span style=\&quot;font-family: arial, helvetica, sans-serif;\&quot;&gt;5&lt;/span&gt;&lt;/strong&gt;&lt;/span&gt;&lt;/td&gt;\n&lt;td style=\&quot;background-color: #e2f2af; text-align: center; width: 147px;\&quot;&gt;&lt;span style=\&quot;font-size: 12pt; font-family: arial, helvetica, sans-serif;\&quot;&gt;90&lt;/span&gt;&lt;/td&gt;\n&lt;td style=\&quot;background-color: #e2f2af; text-align: center; width: 71px;\&quot;&gt;&lt;span style=\&quot;font-size: 12pt; font-family: arial, helvetica, sans-serif;\&quot;&gt;5.5&lt;/span&gt;&lt;/td&gt;\n&lt;/tr&gt;\n&lt;/tbody&gt;\n&lt;/table&gt;\n&lt;p&gt;&lt;br /&gt;&lt;/p&gt;&quot;,&quot;textInfoDurationInput&quot;:&quot;&quot;,&quot;textInfoDurationTextInput&quot;:&quot;&quot;,&quot;textInfoParticipantsInput&quot;:&quot;&quot;,&quot;textInfoParticipantsTextInput&quot;:&quot;&quot;,&quot;activities&quot;:[{&quot;activity&quot;:&quot;&lt;p&gt;&lt;em&gt;Calcula la covarianza.&lt;/em&gt;&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p style=\&quot;text-align: left;\&quot;&gt;&lt;span style=\&quot;font-size: 12pt;\&quot;&gt;Para calcular la covarianza, en primer lugar calculamos $\\frac{\\sum x_{i}y_{j}}{N}$:&lt;/span&gt;&lt;/p&gt;\n&lt;p style=\&quot;text-align: left;\&quot;&gt;&lt;span style=\&quot;font-size: 12pt;\&quot;&gt;$$\\frac{\\sum x_{i}y_{j}}{N} =  \\frac{15*8+30*7.5+45*6.5+60*6+90*5.5}{5} = \\frac{1492.5}{5} = 298.5 $$&lt;/span&gt;&lt;/p&gt;\n&lt;p style=\&quot;text-align: left;\&quot;&gt;&lt;span style=\&quot;font-size: 12pt;\&quot;&gt;Del ejercicio anterior sabemos que: &lt;/span&gt;&lt;/p&gt;\n&lt;p style=\&quot;text-align: left;\&quot;&gt;&lt;span style=\&quot;font-size: 12pt;\&quot;&gt;$\\bar{x} = 48 \\qquad \\bar{y} = 6.7 $&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span style=\&quot;font-size: 12pt;\&quot;&gt;Una vez completada la tabla, sustituimos en la fórmula de la definición, obteniendo así que la covarianza es&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span style=\&quot;font-size: 12pt;\&quot;&gt;$$\\sigma_{xy} = - 48*6.7 = -23.1 &lt;0$$&lt;/span&gt;&lt;/p&gt;\n&lt;p&gt;&lt;span style=\&quot;font-size: 12pt;\&quot;&gt;Como el valor es negativo y no es cercano a 0, podemos afirmar que  la correlación entre X e Y es inversa.&lt;/span&gt;&lt;/p&gt;&quot;,&quot;buttonCaption&quot;:&quot;Mostrar retroalimentación&quot;}]}" data-idevice-template="casestudy.html">
+<div class="exe-casestudy-container">
+  
+        <div class="caseStudyContent">            
+            <div class="CSP-Info mb-3">
+                
+            <dl>
+                <div class="inline"><dt><span title=""></span></dt><dd></dd></div>
+                <div class="inline"><dt><span title=""></span></dt><dd></dd></div>
+            </dl>
+            </div>
+            <div class="CSP-History mb-3" >
+                <p><span style="font-size: 12pt;"><em>Utilizaremos los mismos datos que en el caso anterior.</em></span></p>
+<table style="width: 331px;" height="188">
+<tbody>
+<tr>
+<td style="background-color: #bbd96d; text-align: center; width: 91px;"><span style="font-size: 12pt;"><strong><span style="font-family: arial, helvetica, sans-serif;">Alumno</span></strong></span></td>
+<td style="background-color: #bbd96d; text-align: center; width: 147px;"><span style="font-size: 12pt;"><strong><span style="font-family: arial, helvetica, sans-serif;">Tiempo uso</span></strong></span></td>
+<td style="background-color: #bbd96d; text-align: center; width: 71px;"><span style="font-size: 12pt;"><strong><span style="font-family: arial, helvetica, sans-serif;">Horas sueño</span></strong></span></td>
+</tr>
+<tr>
+<td style="background-color: #bbd96d; text-align: center; width: 91px;"><span style="font-size: 12pt;"><strong><span style="font-family: arial, helvetica, sans-serif;">1</span></strong></span></td>
+<td style="background-color: #e2f2af; text-align: center; width: 147px;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">15</span></td>
+<td style="background-color: #e2f2af; text-align: center; width: 71px;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">8</span></td>
+</tr>
+<tr>
+<td style="background-color: #bbd96d; text-align: center; width: 91px;"><span style="font-size: 12pt;"><strong><span style="font-family: arial, helvetica, sans-serif;">2</span></strong></span></td>
+<td style="background-color: #e2f2af; text-align: center; width: 147px;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">30</span></td>
+<td style="background-color: #e2f2af; text-align: center; width: 71px;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">7.5</span></td>
+</tr>
+<tr>
+<td style="background-color: #bbd96d; text-align: center; width: 91px;"><span style="font-size: 12pt;"><strong><span style="font-family: arial, helvetica, sans-serif;">3</span></strong></span></td>
+<td style="background-color: #e2f2af; text-align: center; width: 147px;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">45</span></td>
+<td style="background-color: #e2f2af; text-align: center; width: 71px;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">6.5</span></td>
+</tr>
+<tr>
+<td style="background-color: #bbd96d; text-align: center; width: 91px;"><span style="font-size: 12pt;"><strong><span style="font-family: arial, helvetica, sans-serif;">4</span></strong></span></td>
+<td style="background-color: #e2f2af; text-align: center; width: 147px;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">60</span></td>
+<td style="background-color: #e2f2af; text-align: center; width: 71px;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">6</span></td>
+</tr>
+<tr>
+<td style="background-color: #bbd96d; text-align: center; width: 91px;"><span style="font-size: 12pt;"><strong><span style="font-family: arial, helvetica, sans-serif;">5</span></strong></span></td>
+<td style="background-color: #e2f2af; text-align: center; width: 147px;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">90</span></td>
+<td style="background-color: #e2f2af; text-align: center; width: 71px;"><span style="font-size: 12pt; font-family: arial, helvetica, sans-serif;">5.5</span></td>
+</tr>
+</tbody>
+</table>
+<p><br /></p>
+            </div>
+            <div class="CSP-Activities mb-3">
+                
+                <div class="CSP-ActivityDiv ">
+                    <div class="CSP-Activity mb-3">
+                        <p><em>Calcula la covarianza.</em></p>
+                    </div>
+                    
+                    <div class="iDevice_buttons feedback-button js-required">
+                        <input type="button" class="CSP-FeedbackBtn feedbacktooglebutton" value="Mostrar retroalimentación">
+                    </div>
+                    <div class="CSP-FeedbackText feedback js-feedback js-hidden" style="display: none;">
+                        <p style="text-align: left;"><span style="font-size: 12pt;">Para calcular la covarianza, en primer lugar calculamos $\frac{\sum x_{i}y_{j}}{N}$:</span></p>
+<p style="text-align: left;"><span style="font-size: 12pt;">$\frac{\sum x_{i}y_{j}}{N} =  \frac{15*8+30*7.5+45*6.5+60*6+90*5.5}{5} = \frac{1492.5}{5} = 298.5 $</span></p>
+<p style="text-align: left;"><span style="font-size: 12pt;">Del ejercicio anterior sabemos que: </span></p>
+<p style="text-align: left;"><span style="font-size: 12pt;">$\bar{x} = 48 \qquad \bar{y} = 6.7 $</span></p>
+<p><span style="font-size: 12pt;">Una vez completada la tabla, sustituimos en la fórmula de la definición, obteniendo así que la covarianza es</span></p>
+<p><span style="font-size: 12pt;">$\sigma_{xy} = - 48*6.7 = -23.1 <0$</span></p>
+<p><span style="font-size: 12pt;">Como el valor es negativo y no es cercano a 0, podemos afirmar que  la correlación entre X e Y es inversa.</span></p>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    
+</div>
+
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/centro-de-gravedad.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/coeficiente-de-correlacion-lineal.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">creative commons: attribution - share alike 4.0 (BY-SA)</a></p>
+</div>
+<div id="siteUserFooter"> <div><script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script></div>
+</div></div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>

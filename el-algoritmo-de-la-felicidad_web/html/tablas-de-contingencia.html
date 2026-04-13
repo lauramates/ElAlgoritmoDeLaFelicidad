@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mnwvomga-9i0mza8m1"><head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0-rc1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>Tablas de contingencia</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mnwvomga-9i0mza8m1" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node daddy">Estadística</a>
+<ul class="other-section">
+<li> <a href="../html/mision-00.html" class="no-ch">Misión #00</a>
+</li>
+<li> <a href="../html/mision-01.html" class="no-ch">Misión #01</a>
+</li>
+<li> <a href="../html/mision-02.html" class="no-ch">Misión #02</a>
+</li>
+<li> <a href="../html/mision-03-conceptos-elementales-de-estadistica.html" class="daddy">Misión #03: Conceptos elementales de estadística.</a>
+<ul class="other-section">
+<li> <a href="../html/muestreo.html" class="no-ch">Muestreo</a>
+</li>
+<li> <a href="../html/tipos-de-variables.html" class="no-ch">Tipos de variables</a>
+</li>
+<li> <a href="../html/tablas-de-frecuencia.html" class="no-ch">Tablas de frecuencia</a>
+</li>
+<li> <a href="../html/mision-04.html" class="no-ch">Misión #04</a>
+</li>
+<li> <a href="../html/mision-05.html" class="no-ch">Misión #05</a>
+</li>
+<li> <a href="../html/mision-06.html" class="no-ch">Misión #06</a>
+</li>
+<li> <a href="../html/mision-07.html" class="no-ch">Misión #07</a>
+</li>
+<li> <a href="../html/mision-08.html" class="no-ch">Misión #08</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/mision-09-parametros-estadisticos.html" class="daddy">Misión #09: Parámetros estadísticos</a>
+<ul class="other-section">
+<li> <a href="../html/media.html" class="no-ch">Media</a>
+</li>
+<li> <a href="../html/varianza-y-desviacion-tipica.html" class="no-ch">Varianza y Desviación típica</a>
+</li>
+<li> <a href="../html/coeficiente-de-variacion.html" class="no-ch">Coeficiente de Variación</a>
+</li>
+<li> <a href="../html/mision-10.html" class="no-ch">Misión #10</a>
+</li>
+<li> <a href="../html/mision-11.html" class="no-ch">Misión #11</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/mision-12-parametros-de-posicion-de-datos.html" class="daddy">Misión #12: Parámetros de posición de datos</a>
+<ul class="other-section">
+<li> <a href="../html/mediana.html" class="no-ch">Mediana</a>
+</li>
+<li> <a href="../html/cuartiles.html" class="no-ch">Cuartiles</a>
+</li>
+<li> <a href="../html/percentiles.html" class="no-ch">Percentiles</a>
+</li>
+<li> <a href="../html/mision-13.html" class="no-ch">Misión #13</a>
+</li>
+<li> <a href="../html/mision-14.html" class="no-ch">Misión #14</a>
+</li>
+<li> <a href="../html/mision-121-otros-parametros-de-posicion-de-datos-a.html" class="daddy">Misión #12.1&nbsp; Otros parámetros de posición de datos agrupados</a>
+<ul class="other-section">
+<li> <a href="../html/poligono-de-frecuencias-acumuladas.html" class="no-ch">Polígono de frecuencias acumuladas</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li> <a href="../html/mision-15-graficos-estadisticos.html" class="daddy">Misión #15: Gráficos estadísticos</a>
+<ul class="other-section">
+<li> <a href="../html/diagrama-de-barras.html" class="no-ch">Diagrama de barras</a>
+</li>
+<li> <a href="../html/histograma.html" class="no-ch">Histograma</a>
+</li>
+<li> <a href="../html/diagrama-de-sectores.html" class="no-ch">Diagrama de sectores</a>
+</li>
+<li> <a href="../html/diagrama-de-cajas-y-bigotes.html" class="no-ch">Diagrama de cajas y bigotes</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/mision-16.html" class="no-ch">Misión #16</a>
+</li>
+<li> <a href="../html/mision-17.html" class="no-ch">Misión #17</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/estadistica-bidimensional.html" class="daddy">Estadística bidimensional</a>
+<ul class="other-section">
+<li> <a href="../html/correlacion-lineal.html" class="no-ch">Correlación lineal</a>
+</li>
+<li> <a href="../html/parametros-asociados.html" class="daddy">Parámetros asociados</a>
+<ul class="other-section">
+<li> <a href="../html/centro-de-gravedad.html" class="no-ch">Centro de gravedad</a>
+</li>
+<li> <a href="../html/covarianza.html" class="no-ch">Covarianza</a>
+</li>
+<li> <a href="../html/coeficiente-de-correlacion-lineal.html" class="no-ch">Coeficiente de correlación lineal</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/recta-de-regresion-lineal.html" class="daddy">Recta de regresión lineal</a>
+<ul class="other-section">
+<li> <a href="../html/hay-dos-rectas-de-regresion.html" class="no-ch">Hay dos rectas de regresión</a>
+</li>
+</ul>
+</li>
+<li class="active"> <a href="../html/tablas-de-contingencia.html" class="active no-ch">Tablas de contingencia</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/guia-didactica.html" class="daddy">Guía didáctica</a>
+<ul class="other-section">
+<li> <a href="../html/1-justificacion.html" class="no-ch">1. Justificación</a>
+</li>
+<li> <a href="../html/2-referencia-a-las-competencias-clave.html" class="no-ch">2. Referencia a las competencias clave</a>
+</li>
+<li> <a href="../html/3-referencia-curricular.html" class="no-ch">3. Referencia curricular</a>
+</li>
+<li> <a href="../html/4-guia-de-uso-para-el-aula.html" class="no-ch">4. Guía de uso para el aula</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-mnwvomga-9i0mza8m1" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">El algoritmo de la felicidad</p>
+<p class="package-subtitle">Redes sociales vs Horas de sueño</p></div>
+<div class="page-header"><h1 class="page-title">Tablas de contingencia</h1></div>
+</header><div id="page-content-page-mnwvomga-9i0mza8m1" class="page-content">
+<article id="block-mmufljn9-jvn5oxf7s" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/objectives.png" alt="">
+</div>
+<h1 class="box-title">Definición</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mmufljn9-fbgcvcpgi" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mmufljn9-fbgcvcpgi&quot;}">
+<div class="exe-text-template">
+    <div style="font-family: 'Segoe UI', Roboto, sans-serif; border: 2px solid #405DE6; border-radius: 20px; overflow: hidden; background-color: #e8f0ff; color: #0d1117; max-width: 900px; margin: 20px auto; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+<div style="background-color: #405de6; padding: 20px; text-align: center; border-bottom: 1px solid #30363d;">
+<h3 style="color: white; margin: 0; font-size: 1.3em; text-transform: uppercase; letter-spacing: 2px;">📊 Tablas de contingencia</h3>
+</div>
+<div style="display: flex; background-color: #dbe4ff; border-bottom: 2px solid #405DE6;"><button onclick="showCont('contingencia')" class="btn-d" style="flex: 1; padding: 15px; font-weight: bold; font-size: 11pt; background: #405DE6; color: white; border: none; cursor: pointer;">Contingencia</button> <button onclick="showCont('marginal')" class="btn-d" style="flex: 1; padding: 15px; font-weight: bold; font-size: 11pt; background: #dbe4ff; color: #405de6; border-left: 1px solid #405DE6; cursor: pointer;">Marginal</button> <button onclick="showCont('condicionada')" class="btn-d" style="flex: 1; padding: 15px; font-weight: bold; font-size: 11pt; background: #dbe4ff; color: #405de6; border-left: 1px solid #405DE6; cursor: pointer;">Condicionada</button> <button onclick="showCont('independencia')" class="btn-d" style="flex: 1; padding: 15px; font-weight: bold; font-size: 11pt; background: #dbe4ff; color: #405de6; border-left: 1px solid #405DE6; cursor: pointer;">Independencia</button></div>
+<div style="padding: 25px; min-height: 250px;"><!-- Tabla de contingencia -->
+<div id="contingencia" class="d-content" style="display: block;">
+<div style="border-left: 4px solid #405DE6; padding: 20px; background: #f0f5ff; border-radius: 8px;">
+<h4 style="color: #405de6; margin-top: 0;">📂 Tabla de contingencia</h4>
+<p>Las <strong>tablas de contingencia</strong> permiten analizar la relación entre dos variables.</p>
+<table style="width: 100%; border-collapse: collapse; font-size: 12pt; text-align: center; margin-top: 10px;">
+<tbody>
+<tr style="background: #fff9e6;">
+<th style="border: 1px solid #405DE6; padding: 8px;">Red Social / Sueño</th>
+<th style="border: 1px solid #405DE6; padding: 8px;">&lt; 6h</th>
+<th style="border: 1px solid #405DE6; padding: 8px;">6-7h</th>
+<th style="border: 1px solid #405DE6; padding: 8px;">7-8h</th>
+<th style="border: 1px solid #405DE6; padding: 8px;">TOTAL</th>
+</tr>
+<tr>
+<td style="border: 1px solid #405DE6; padding: 8px;">TikTok</td>
+<td style="border: 1px solid #405DE6; padding: 8px;">3</td>
+<td style="border: 1px solid #405DE6; padding: 8px;">3</td>
+<td style="border: 1px solid #405DE6; padding: 8px;">1</td>
+<td style="border: 1px solid #405DE6; padding: 8px; font-weight: bold;">7</td>
+</tr>
+<tr>
+<td style="border: 1px solid #405DE6; padding: 8px;">Combinadas</td>
+<td style="border: 1px solid #405DE6; padding: 8px;">3</td>
+<td style="border: 1px solid #405DE6; padding: 8px;">11</td>
+<td style="border: 1px solid #405DE6; padding: 8px;">8</td>
+<td style="border: 1px solid #405DE6; padding: 8px; font-weight: bold;">22</td>
+</tr>
+<tr>
+<td style="border: 1px solid #405DE6; padding: 8px;">Otras</td>
+<td style="border: 1px solid #405DE6; padding: 8px;">1</td>
+<td style="border: 1px solid #405DE6; padding: 8px;">4</td>
+<td style="border: 1px solid #405DE6; padding: 8px;">3</td>
+<td style="border: 1px solid #405DE6; padding: 8px; font-weight: bold;">8</td>
+</tr>
+<tr style="background: #f5f5f5;">
+<td style="border: 1px solid #405DE6; padding: 8px; font-weight: bold;">TOTAL</td>
+<td style="border: 1px solid #405DE6; padding: 8px; font-weight: bold;">7</td>
+<td style="border: 1px solid #405DE6; padding: 8px; font-weight: bold;">18</td>
+<td style="border: 1px solid #405DE6; padding: 8px; font-weight: bold;">12</td>
+<td style="border: 1px solid #405DE6; padding: 8px; font-weight: bold;">37</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Distribuciones marginales -->
+<div id="marginal" class="d-content" style="display: none;">
+<div style="border-left: 4px solid #FF9800; padding: 20px; background: #fff8f0; border-radius: 8px;">
+<h4 style="color: #ff9800; margin-top: 0;">📊 Distribuciones marginales</h4>
+<ul style="font-size: 12pt; line-height: 1.6;">
+<li><strong>Marginal de x:</strong> suma total de cada fila.</li>
+<li><strong>Marginal de y:</strong> suma total de cada columna.</li>
+</ul>
+<!-- Tabla ejemplo de marginales -->
+<table style="width: 48%; display: inline-block; border-collapse: collapse; font-size: 12pt; margin-top: 10px; text-align: center; margin-right: 2%;">
+<tbody>
+<tr style="background: #fff9e6;">
+<th style="border: 1px solid #FF9800; padding: 8px;">Red Social</th>
+<th style="border: 1px solid #FF9800; padding: 8px;">f_i</th>
+</tr>
+<tr>
+<td>TikTok</td>
+<td>7</td>
+</tr>
+<tr>
+<td>Combinadas</td>
+<td>22</td>
+</tr>
+<tr>
+<td>Otras</td>
+<td>8</td>
+</tr>
+<tr style="font-weight: bold;">
+<td>TOTAL</td>
+<td>37</td>
+</tr>
+</tbody>
+</table>
+<table style="width: 48%; display: inline-block; border-collapse: collapse; font-size: 12pt; margin-top: 10px; text-align: center;">
+<tbody>
+<tr style="background: #fff9e6;">
+<th style="border: 1px solid #FF9800; padding: 8px;">Sueño</th>
+<th style="border: 1px solid #FF9800; padding: 8px;">f_j</th>
+</tr>
+<tr>
+<td>&lt;6h</td>
+<td>7</td>
+</tr>
+<tr>
+<td>6-7h</td>
+<td>18</td>
+</tr>
+<tr>
+<td>7-8h</td>
+<td>12</td>
+</tr>
+<tr style="font-weight: bold;">
+<td>TOTAL</td>
+<td>37</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Distribuciones condicionadas -->
+<div id="condicionada" class="d-content" style="display: none;">
+<div style="border-left: 4px solid #E1306C; padding: 20px; background: #fff0f6; border-radius: 8px;">
+<h4 style="color: #e1306c; margin-top: 0;">📈 Distribuciones condicionadas</h4>
+<p>Analiza la distribución de una variable dentro de un grupo específico:</p>
+<table style="width: 100%; border-collapse: collapse; font-size: 12pt; text-align: center; margin-top: 10px;">
+<tbody>
+<tr style="background: #ffe6f2;">
+<th style="border: 1px solid #E1306C; padding: 8px;">Horas de sueño</th>
+<th style="border: 1px solid #E1306C; padding: 8px;">f</th>
+<th style="border: 1px solid #E1306C; padding: 8px;">Frecuencia relativa</th>
+</tr>
+<tr>
+<td>&lt;6h</td>
+<td>1</td>
+<td>0.125</td>
+</tr>
+<tr>
+<td>6-7h</td>
+<td>4</td>
+<td>0.500</td>
+</tr>
+<tr>
+<td>7-8h</td>
+<td>3</td>
+<td>0.375</td>
+</tr>
+<tr style="font-weight: bold;">
+<td>TOTAL</td>
+<td>8</td>
+<td>1.000</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Variables independientes -->
+<div id="independencia" class="d-content" style="display: none;">
+<div style="border-left: 4px solid #833AB4; padding: 20px; background: #f5e8ff; border-radius: 8px;">
+<h4 style="color: #833ab4; margin-top: 0;">🔗 Variables independientes</h4>
+<p>Si las frecuencias relativas condicionadas coinciden con las marginales, las variables son independientes. Si no, son dependientes o correlacionadas.</p>
+</div>
+</div>
+</div>
+</div>
+<p>
+<script>
+function showCont(id){
+  var slides = document.getElementsByClassName("d-content");
+  for(var i=0;i<slides.length;i++){ slides[i].style.display="none"; }
+  var btns = document.getElementsByClassName("btn-d");
+  for(var i=0;i<btns.length;i++){ btns[i].style.background="#dbe4ff"; btns[i].style.color="#405DE6"; }
+  document.getElementById(id).style.display="block";
+  event.currentTarget.style.background="#405DE6";
+  event.currentTarget.style.color="white";
+}
+</script>
+</p>
+</div>
+</div><div id="idevice-1774608533944-f2yqr6la4" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-1774608533944-f2yqr6la4&quot;}">
+<div class="exe-text-template">
+    <p>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async="" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+</p>
+<div style="font-family: 'Segoe UI', Roboto, sans-serif; border: 2px solid #405DE6; border-radius: 20px; overflow: hidden; background-color: #f0f8ff; color: #0d1117; max-width: 950px; margin: 20px auto; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+<div style="background-color: #405de6; padding: 20px; text-align: center; border-bottom: 1px solid #30363d;">
+<h3 style="color: white; margin: 0; font-size: 1.3em; text-transform: uppercase; letter-spacing: 2px;">📐 Parámetros DESDE LA TABLA</h3>
+</div>
+<div style="display: flex; background-color: #dbe4ff; border-bottom: 2px solid #405DE6;"><button onclick="showParams('tablas')" class="btn-d" style="flex: 1; padding: 15px; font-weight: bold; font-size: 11pt; background: #405DE6; color: white; border: none; cursor: pointer;">Tablas de frecuencia</button> <button onclick="showParams('medias')" class="btn-d" style="flex: 1; padding: 15px; font-weight: bold; font-size: 11pt; background: #dbe4ff; color: #405de6; border-left: 1px solid #405DE6; cursor: pointer;">Medias y desviaciones</button> <button onclick="showParams('covarianza')" class="btn-d" style="flex: 1; padding: 15px; font-weight: bold; font-size: 11pt; background: #dbe4ff; color: #405de6; border-left: 1px solid #405DE6; cursor: pointer;">Covarianza</button></div>
+<div style="padding: 25px; min-height: 250px;"><!-- Tablas de frecuencia -->
+<div id="tablas" class="d-content" style="display: block;">
+<div style="border-left: 4px solid #405DE6; padding: 20px; background: #f0f5ff; border-radius: 8px;">
+<h4 style="color: #405de6; margin-top: 0;">📋 Tabla de frecuencia (X vs Y)</h4>
+<p>Esta tabla nos permite calcular los parámetros de la distribución bidimensional.</p>
+<table style="width: 100%; border-collapse: collapse; text-align: center; font-size: 12pt;">
+<tbody>
+<tr style="background: #fff9e6;">
+<th style="border: 1px solid #405DE6; padding: 8px;">y_j (horas) \ x_i (min)</th>
+<th style="border: 1px solid #405DE6; padding: 8px;">15</th>
+<th style="border: 1px solid #405DE6; padding: 8px;">30</th>
+<th style="border: 1px solid #405DE6; padding: 8px;">45</th>
+<th style="border: 1px solid #405DE6; padding: 8px;">60</th>
+<th style="border: 1px solid #405DE6; padding: 8px;">90</th>
+<th style="border: 1px solid #405DE6; padding: 8px;">TOTAL f_j</th>
+</tr>
+<tr>
+<td>7.5</td>
+<td>2</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0</td>
+<td>3</td>
+</tr>
+<tr>
+<td>6.5</td>
+<td>1</td>
+<td>4</td>
+<td>2</td>
+<td>2</td>
+<td>0</td>
+<td>9</td>
+</tr>
+<tr>
+<td>5.5</td>
+<td>0</td>
+<td>3</td>
+<td>2</td>
+<td>1</td>
+<td>2</td>
+<td>8</td>
+</tr>
+<tr style="font-weight: bold; background: #f5f5f5;">
+<td>TOTAL f_i</td>
+<td>3</td>
+<td>8</td>
+<td>4</td>
+<td>3</td>
+<td>2</td>
+<td>N=20</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<!-- Medias y desviaciones -->
+<div id="medias" class="d-content" style="display: none;">
+<div style="border-left: 4px solid #E1306C; padding: 20px; background: #fff0f6; border-radius: 8px;">
+<h4 style="color: #e1306c; margin-top: 0;">📏 Medias y desviaciones típicas</h4>
+<p>Se calculan a partir de las distribuciones marginales:</p>
+<ul style="font-size: 12pt; line-height: 1.6;">
+<li><strong>Variable x:</strong> <span style="color: #e1306c;">$\bar{x} = \frac{\sum x_i f_i}{\sum f_i}$</span> ; <span style="color: #e1306c;">$\sigma_x = \sqrt{\frac{\sum x_i^2 f_i}{\sum f_i} - \bar{x}^2}$</span></li>
+<li><strong>Variable y:</strong> <span style="color: #e1306c;">$\bar{y} = \frac{\sum y_j f_j}{\sum f_j}$</span> ; <span style="color: #e1306c;">$\sigma_y = \sqrt{\frac{\sum y_j^2 f_j}{\sum f_j} - \bar{y}^2}$</span></li>
+</ul>
+<div style="display: flex; gap: 10px; margin-top: 15px;"><!-- Tabla X -->
+<table style="width: 48%; border-collapse: collapse; font-size: 12pt; text-align: center;">
+<tbody>
+<tr style="background: #ffe6f2;">
+<th>x_i</th>
+<th>f_i</th>
+<th>x_i f_i</th>
+<th>x_i² f_i</th>
+</tr>
+<tr>
+<td>15</td>
+<td>3</td>
+<td>45</td>
+<td>675</td>
+</tr>
+<tr>
+<td>30</td>
+<td>8</td>
+<td>240</td>
+<td>7200</td>
+</tr>
+<tr>
+<td>45</td>
+<td>4</td>
+<td>180</td>
+<td>8100</td>
+</tr>
+<tr>
+<td>60</td>
+<td>3</td>
+<td>180</td>
+<td>10800</td>
+</tr>
+<tr>
+<td>90</td>
+<td>2</td>
+<td>180</td>
+<td>16200</td>
+</tr>
+<tr style="font-weight: bold;">
+<td>Σ</td>
+<td>20</td>
+<td>825</td>
+<td>42975</td>
+</tr>
+</tbody>
+</table>
+<!-- Tabla Y -->
+<table style="width: 48%; border-collapse: collapse; font-size: 12pt; text-align: center;">
+<tbody>
+<tr style="background: #ffe6f2;">
+<th>y_j</th>
+<th>f_j</th>
+<th>y_j f_j</th>
+<th>y_j² f_j</th>
+</tr>
+<tr>
+<td>5.5</td>
+<td>8</td>
+<td>44.0</td>
+<td>242.0</td>
+</tr>
+<tr>
+<td>6.5</td>
+<td>9</td>
+<td>58.5</td>
+<td>380.25</td>
+</tr>
+<tr>
+<td>7.5</td>
+<td>3</td>
+<td>22.5</td>
+<td>168.75</td>
+</tr>
+<tr style="font-weight: bold;">
+<td>Σ</td>
+<td>20</td>
+<td>125.0</td>
+<td>791.0</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<!-- Covarianza -->
+<div id="covarianza" class="d-content" style="display: none;">
+<div style="border-left: 4px solid #833AB4; padding: 20px; background: #f5e8ff; border-radius: 8px;">
+<h4 style="color: #833ab4; margin-top: 0;">🔗 Covarianza</h4>
+<p>La covarianza mide la variación conjunta de las dos variables:</p>
+<p style="font-size: 14pt; text-align: center; font-weight: bold;">$\sigma_{xy} = \frac{\sum x_i y_j f_{ij}}{\sum f_{ij}} - \bar{x}\bar{y}$</p>
+<p>donde <span class="exe-math-rendered" data-latex="\(x_i\)"><svg xmlns="http://www.w3.org/2000/svg" width="2.034ex" height="1.357ex" role="img" focusable="false" viewBox="0 -442 899 599.8" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.357ex;"><defs><path id="MJX-34-TEX-I-1D465" d="M52 289Q59 331 106 386T222 442Q257 442 286 424T329 379Q371 442 430 442Q467 442 494 420T522 361Q522 332 508 314T481 292T458 288Q439 288 427 299T415 328Q415 374 465 391Q454 404 425 404Q412 404 406 402Q368 386 350 336Q290 115 290 78Q290 50 306 38T341 26Q378 26 414 59T463 140Q466 150 469 151T485 153H489Q504 153 504 145Q504 144 502 134Q486 77 440 33T333 -11Q263 -11 227 52Q186 -10 133 -10H127Q78 -10 57 16T35 71Q35 103 54 123T99 143Q142 143 142 101Q142 81 130 66T107 46T94 41L91 40Q91 39 97 36T113 29T132 26Q168 26 194 71Q203 87 217 139T245 247T261 313Q266 340 266 352Q266 380 251 392T217 404Q177 404 142 372T93 290Q91 281 88 280T72 278H58Q52 284 52 289Z"></path><path id="MJX-34-TEX-I-1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D465" xlink:href="#MJX-34-TEX-I-1D465"></use></g><g data-mml-node="mi" transform="translate(605,-150) scale(0.707)"><use data-c="1D456" xlink:href="#MJX-34-TEX-I-1D456"></use></g></g></g></g></svg><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>x</mi><mi>i</mi></msub></math></span> e <span class="exe-math-rendered" data-latex="\(y_j\)"><svg xmlns="http://www.w3.org/2000/svg" width="1.955ex" height="1.666ex" role="img" focusable="false" viewBox="0 -442 864.3 736.2" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.666ex;"><defs><path id="MJX-35-TEX-I-1D466" d="M21 287Q21 301 36 335T84 406T158 442Q199 442 224 419T250 355Q248 336 247 334Q247 331 231 288T198 191T182 105Q182 62 196 45T238 27Q261 27 281 38T312 61T339 94Q339 95 344 114T358 173T377 247Q415 397 419 404Q432 431 462 431Q475 431 483 424T494 412T496 403Q496 390 447 193T391 -23Q363 -106 294 -155T156 -205Q111 -205 77 -183T43 -117Q43 -95 50 -80T69 -58T89 -48T106 -45Q150 -45 150 -87Q150 -107 138 -122T115 -142T102 -147L99 -148Q101 -153 118 -160T152 -167H160Q177 -167 186 -165Q219 -156 247 -127T290 -65T313 -9T321 21L315 17Q309 13 296 6T270 -6Q250 -11 231 -11Q185 -11 150 11T104 82Q103 89 103 113Q103 170 138 262T173 379Q173 380 173 381Q173 390 173 393T169 400T158 404H154Q131 404 112 385T82 344T65 302T57 280Q55 278 41 278H27Q21 284 21 287Z"></path><path id="MJX-35-TEX-I-1D457" d="M297 596Q297 627 318 644T361 661Q378 661 389 651T403 623Q403 595 384 576T340 557Q322 557 310 567T297 596ZM288 376Q288 405 262 405Q240 405 220 393T185 362T161 325T144 293L137 279Q135 278 121 278H107Q101 284 101 286T105 299Q126 348 164 391T252 441Q253 441 260 441T272 442Q296 441 316 432Q341 418 354 401T367 348V332L318 133Q267 -67 264 -75Q246 -125 194 -164T75 -204Q25 -204 7 -183T-12 -137Q-12 -110 7 -91T53 -71Q70 -71 82 -81T95 -112Q95 -148 63 -167Q69 -168 77 -168Q111 -168 139 -140T182 -74L193 -32Q204 11 219 72T251 197T278 308T289 365Q289 372 288 376Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D466" xlink:href="#MJX-35-TEX-I-1D466"></use></g><g data-mml-node="mi" transform="translate(523,-150) scale(0.707)"><use data-c="1D457" xlink:href="#MJX-35-TEX-I-1D457"></use></g></g></g></g></svg><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>y</mi><mi>j</mi></msub></math></span> representan los valores posibles y <span class="exe-math-rendered" data-latex="\(f_{ij}\)"><svg xmlns="http://www.w3.org/2000/svg" width="2.507ex" height="2.261ex" role="img" focusable="false" viewBox="0 -705 1108.3 999.2" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.666ex;"><defs><path id="MJX-36-TEX-I-1D453" d="M118 -162Q120 -162 124 -164T135 -167T147 -168Q160 -168 171 -155T187 -126Q197 -99 221 27T267 267T289 382V385H242Q195 385 192 387Q188 390 188 397L195 425Q197 430 203 430T250 431Q298 431 298 432Q298 434 307 482T319 540Q356 705 465 705Q502 703 526 683T550 630Q550 594 529 578T487 561Q443 561 443 603Q443 622 454 636T478 657L487 662Q471 668 457 668Q445 668 434 658T419 630Q412 601 403 552T387 469T380 433Q380 431 435 431Q480 431 487 430T498 424Q499 420 496 407T491 391Q489 386 482 386T428 385H372L349 263Q301 15 282 -47Q255 -132 212 -173Q175 -205 139 -205Q107 -205 81 -186T55 -132Q55 -95 76 -78T118 -61Q162 -61 162 -103Q162 -122 151 -136T127 -157L118 -162Z"></path><path id="MJX-36-TEX-I-1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path><path id="MJX-36-TEX-I-1D457" d="M297 596Q297 627 318 644T361 661Q378 661 389 651T403 623Q403 595 384 576T340 557Q322 557 310 567T297 596ZM288 376Q288 405 262 405Q240 405 220 393T185 362T161 325T144 293L137 279Q135 278 121 278H107Q101 284 101 286T105 299Q126 348 164 391T252 441Q253 441 260 441T272 442Q296 441 316 432Q341 418 354 401T367 348V332L318 133Q267 -67 264 -75Q246 -125 194 -164T75 -204Q25 -204 7 -183T-12 -137Q-12 -110 7 -91T53 -71Q70 -71 82 -81T95 -112Q95 -148 63 -167Q69 -168 77 -168Q111 -168 139 -140T182 -74L193 -32Q204 11 219 72T251 197T278 308T289 365Q289 372 288 376Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msub"><g data-mml-node="mi"><use data-c="1D453" xlink:href="#MJX-36-TEX-I-1D453"></use></g><g data-mml-node="TeXAtom" transform="translate(523,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><use data-c="1D456" xlink:href="#MJX-36-TEX-I-1D456"></use></g><g data-mml-node="mi" transform="translate(345,0)"><use data-c="1D457" xlink:href="#MJX-36-TEX-I-1D457"></use></g></g></g></g></g></svg><math xmlns="http://www.w3.org/1998/Math/MathML"><msub><mi>f</mi><mrow data-mjx-texclass="ORD"><mi>i</mi><mi>j</mi></mrow></msub></math></span> son las frecuencias de cada par.</p>
+</div>
+</div>
+</div>
+</div>
+<p>
+<script>
+function showParams(id){
+  var slides = document.getElementsByClassName("d-content");
+  for(var i=0;i<slides.length;i++){ slides[i].style.display="none"; }
+  var btns = document.getElementsByClassName("btn-d");
+  for(var i=0;i<btns.length;i++){ btns[i].style.background="#dbe4ff"; btns[i].style.color="#405DE6"; }
+  document.getElementById(id).style.display="block";
+  event.currentTarget.style.background="#405DE6";
+  event.currentTarget.style.color="white";
+}
+</script>
+</p>
+</div>
+</div>
+</div>
+</article><article id="block-mmufljn9-udhe69pim" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/book.png" alt="">
+</div>
+<h1 class="box-title">Ejercicio resuelto</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mmufljn9-64a04wcq3" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mmufljn9-64a04wcq3&quot;}">
+<div class="exe-text-activity"><p><span style="font-size: 12pt;">Un grupo de alumnos realiza dos test, X e Y, con cuatro preguntas cada uno. Los errores en las respuestas se recogen en la tabla, donde cada casilla recoge el número de individuos que han tenido esos dos errores. ¿Qué número de alumnos han fallado la primera pregunta del primer test (X)?¿Y la tercera del segundo test (Y)?</span></p>
+<p><span style="font-size: 12pt;">Se suman las filas de cada valor de X y las columnas de cada valor de Y:</span></p>
+<table style="width: 65.7485%;">
+<tbody>
+<tr>
+<td style="background-color: #fa710f; text-align: center;"><span style="font-size: 12pt;"><strong>X\Y</strong></span></td>
+<td style="background-color: #fa710f; text-align: center;"><span style="font-size: 12pt;"><strong>1</strong></span></td>
+<td style="background-color: #fa710f; text-align: center;"><span style="font-size: 12pt;"><strong>2</strong></span></td>
+<td style="background-color: #fa710f; text-align: center;"><span style="font-size: 12pt;"><strong>3</strong></span></td>
+<td style="background-color: #fa710f; text-align: center;"><span style="font-size: 12pt;"><strong>4</strong></span></td>
+<td style="background-color: #fa710f; text-align: center;"><span style="font-size: 12pt;"><strong>Suma X</strong></span></td>
+</tr>
+<tr style="text-align: center;">
+<td style="background-color: #fa710f;"><span style="font-size: 12pt;"><strong>1</strong></span></td>
+<td style="background-color: #fca160;"><span style="font-size: 12pt;">12</span></td>
+<td style="background-color: #fca160;"><span style="font-size: 12pt;">6</span></td>
+<td style="background-color: #fca160;"><span style="font-size: 12pt;">4</span></td>
+<td style="background-color: #fca160;"><span style="font-size: 12pt;">2</span></td>
+<td style="background-color: #fca160;"><span style="font-size: 12pt;"><strong>24</strong></span></td>
+</tr>
+<tr style="text-align: center;">
+<td style="background-color: #fa710f;"><span style="font-size: 12pt;"><strong>2</strong></span></td>
+<td style="background-color: #fca160;"><span style="font-size: 12pt;">8</span></td>
+<td style="background-color: #fca160;"><span style="font-size: 12pt;">7</span></td>
+<td style="background-color: #fca160;"><span style="font-size: 12pt;">3</span></td>
+<td style="background-color: #fca160;"><span style="font-size: 12pt;">0</span></td>
+<td style="background-color: #fca160;"><span style="font-size: 12pt;"><strong>18</strong></span></td>
+</tr>
+<tr style="text-align: center;">
+<td style="background-color: #fa710f;"><span style="font-size: 12pt;"><strong>3</strong></span></td>
+<td style="background-color: #fca160;"><span style="font-size: 12pt;">6</span></td>
+<td style="background-color: #fca160;"><span style="font-size: 12pt;">5</span></td>
+<td style="background-color: #fca160;"><span style="font-size: 12pt;">2</span></td>
+<td style="background-color: #fca160;"><span style="font-size: 12pt;">1</span></td>
+<td style="background-color: #fca160;"><span style="font-size: 12pt;"><strong>14</strong></span></td>
+</tr>
+<tr style="text-align: center;">
+<td style="background-color: #fa710f;"><span style="font-size: 12pt;"><strong>4</strong></span></td>
+<td style="background-color: #fca160;"><span style="font-size: 12pt;">4</span></td>
+<td style="background-color: #fca160;"><span style="font-size: 12pt;">3</span></td>
+<td style="background-color: #fca160;"><span style="font-size: 12pt;">1</span></td>
+<td style="background-color: #fca160;"><span style="font-size: 12pt;">0</span></td>
+<td style="background-color: #fca160;"><span style="font-size: 12pt;"><strong>8</strong></span></td>
+</tr>
+<tr style="text-align: center;">
+<td style="background-color: #fa710f;"><span style="font-size: 12pt;"><strong>Suma Y</strong></span></td>
+<td style="background-color: #fca160;"><span style="font-size: 12pt;"><strong>30</strong></span></td>
+<td style="background-color: #fca160;"><span style="font-size: 12pt;"><strong>21</strong></span></td>
+<td style="background-color: #fca160;"><span style="font-size: 12pt;"><strong>10</strong></span></td>
+<td style="background-color: #fca160;"><span style="font-size: 12pt;"><strong>3</strong></span></td>
+<td style="background-color: #fca160;"><span style="font-size: 12pt;"><strong>64</strong></span></td>
+</tr>
+</tbody>
+</table><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbacktooglebutton" value="Mostrar retroalimentación"></div><div class="feedback js-feedback js-hidden"><p><span style="font-size: 12pt;">Los alumnos que han fallado la primera pregunta del primer test han sido 24 y los que han fallado la tercera del segundo test han sido 10.</span></p></div></div>
+</div>
+</div>
+</article><article id="block-mmufljn9-5z64s7xbf" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/activity.png" alt="">
+</div>
+<h1 class="box-title">Actividad</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mmufljn9-fewdarbwx" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mmufljn9-fewdarbwx&quot;}">
+<p><span style="font-size: 12pt;">Las puntuaciones obtenidas por 40 personas en dos test que miden la comprensión lectora (X) y el cálculo numérico (Y) han sido:</span></p>
+<table style="width: 52.3715%;">
+<tbody>
+<tr>
+<td style="background-color: #2a5cdb; width: 10%; text-align: center;"><span style="color: #ffffff; font-size: 12pt;"><strong>X\Y</strong></span></td>
+<td style="background-color: #2a5cdb; width: 10%; text-align: center;"><span style="color: #ffffff; font-size: 12pt;"><strong>20</strong></span></td>
+<td style="background-color: #2a5cdb; width: 10%; text-align: center;"><span style="color: #ffffff; font-size: 12pt;"><strong>30</strong></span></td>
+<td style="background-color: #2a5cdb; width: 10%; text-align: center;"><span style="color: #ffffff; font-size: 12pt;"><strong>40</strong></span></td>
+<td style="background-color: #2a5cdb; width: 10%; text-align: center;"><span style="color: #ffffff; font-size: 12pt;"><strong>50</strong></span></td>
+</tr>
+<tr>
+<td style="background-color: #2a5cdb; width: 10%; text-align: center;"><span style="color: #ffffff; font-size: 12pt;"><strong>20</strong></span></td>
+<td style="background-color: #8ea7e8; width: 10%; text-align: center;"><span style="font-size: 12pt;">3</span></td>
+<td style="background-color: #8ea7e8; width: 10%; text-align: center;"><span style="font-size: 12pt;">4</span></td>
+<td style="background-color: #8ea7e8; width: 10%; text-align: center;"><span style="font-size: 12pt;">2</span></td>
+<td style="background-color: #8ea7e8; width: 10%; text-align: center;"><span style="font-size: 12pt;">1</span></td>
+</tr>
+<tr>
+<td style="background-color: #2a5cdb; width: 10%; text-align: center;"><span style="color: #ffffff; font-size: 12pt;"><strong>30</strong></span></td>
+<td style="background-color: #8ea7e8; width: 10%; text-align: center;"><span style="font-size: 12pt;">5</span></td>
+<td style="background-color: #8ea7e8; width: 10%; text-align: center;"><span style="font-size: 12pt;">2</span></td>
+<td style="background-color: #8ea7e8; width: 10%; text-align: center;"><span style="font-size: 12pt;">2</span></td>
+<td style="background-color: #8ea7e8; width: 10%; text-align: center;"><span style="font-size: 12pt;">1</span></td>
+</tr>
+<tr>
+<td style="background-color: #2a5cdb; width: 10%; text-align: center;"><span style="color: #ffffff; font-size: 12pt;"><strong>40</strong></span></td>
+<td style="background-color: #8ea7e8; width: 10%; text-align: center;"><span style="font-size: 12pt;">1</span></td>
+<td style="background-color: #8ea7e8; width: 10%; text-align: center;"><span style="font-size: 12pt;">3</span></td>
+<td style="background-color: #8ea7e8; width: 10%; text-align: center;"><span style="font-size: 12pt;">4</span></td>
+<td style="background-color: #8ea7e8; width: 10%; text-align: center;"><span style="font-size: 12pt;">2</span></td>
+</tr>
+<tr>
+<td style="background-color: #2a5cdb; width: 10%; text-align: center;"><span style="color: #ffffff; font-size: 12pt;"><strong>50</strong></span></td>
+<td style="background-color: #8ea7e8; width: 10%; text-align: center;"><span style="font-size: 12pt;">0</span></td>
+<td style="background-color: #8ea7e8; width: 10%; text-align: center;"><span style="font-size: 12pt;">1</span></td>
+<td style="background-color: #8ea7e8; width: 10%; text-align: center;"><span style="font-size: 12pt;">3</span></td>
+<td style="background-color: #8ea7e8; width: 10%; text-align: center;"><span style="font-size: 12pt;">6</span></td>
+</tr>
+</tbody>
+</table>
+<ol style="list-style-type: lower-alpha;">
+<li><span style="font-size: 12pt;">¿Cuántas personas han obtenido 30 puntos en comprensión lectora?¿Y 50 puntos en cálculo numérico?</span></li>
+<li><span style="font-size: 12pt;">¿Hay correlación entre ambas habilidades?</span></li>
+</ol>
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/hay-dos-rectas-de-regresion.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/guia-didactica.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">creative commons: attribution - share alike 4.0 (BY-SA)</a></p>
+</div>
+<div id="siteUserFooter"> <div><script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" async="" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script></div>
+</div></div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+
+</body></html>

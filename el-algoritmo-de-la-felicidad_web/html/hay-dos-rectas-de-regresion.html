@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es" id="exe-page-mnwvomg6-m4dvxrcnk">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="eXeLearning v4.0.0-rc1">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="license" type="text/html" href="https://creativecommons.org/licenses/by-sa/4.0/">
+<title>Hay dos rectas de regresión</title>
+<link rel="icon" type="image/x-icon" href="../libs/favicon.ico">
+<script>document.querySelector("html").classList.add("js");</script><script src="../libs/jquery/jquery.min.js"> </script><script src="../libs/common_i18n.js"> </script><script src="../libs/common.js"> </script><script src="../libs/exe_export.js"> </script><script src="../libs/bootstrap/bootstrap.bundle.min.js"> </script><link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
+<script src="../idevices/text/text.js"></script><link rel="stylesheet" href="../idevices/text/text.css">
+<script src="../idevices/casestudy/casestudy.js"></script><link rel="stylesheet" href="../idevices/casestudy/casestudy.css">
+<link rel="stylesheet" href="../content/css/base.css"><script src="../theme/style.js"> </script><link rel="stylesheet" href="../theme/style.css">
+</head>
+<body class="exe-export exe-web-site">
+<script>document.body.className+=" js"</script>
+<div class="exe-content exe-export pre-js siteNav-hidden"><a href="#page-mnwvomg6-m4dvxrcnk" id="skipNav">Skip to content</a> <nav id="siteNav">
+<ul>
+<li> <a href="../index.html" class="main-node daddy">Estadística</a>
+<ul class="other-section">
+<li> <a href="../html/mision-00.html" class="no-ch">Misión #00</a>
+</li>
+<li> <a href="../html/mision-01.html" class="no-ch">Misión #01</a>
+</li>
+<li> <a href="../html/mision-02.html" class="no-ch">Misión #02</a>
+</li>
+<li> <a href="../html/mision-03-conceptos-elementales-de-estadistica.html" class="daddy">Misión #03: Conceptos elementales de estadística.</a>
+<ul class="other-section">
+<li> <a href="../html/muestreo.html" class="no-ch">Muestreo</a>
+</li>
+<li> <a href="../html/tipos-de-variables.html" class="no-ch">Tipos de variables</a>
+</li>
+<li> <a href="../html/tablas-de-frecuencia.html" class="no-ch">Tablas de frecuencia</a>
+</li>
+<li> <a href="../html/mision-04.html" class="no-ch">Misión #04</a>
+</li>
+<li> <a href="../html/mision-05.html" class="no-ch">Misión #05</a>
+</li>
+<li> <a href="../html/mision-06.html" class="no-ch">Misión #06</a>
+</li>
+<li> <a href="../html/mision-07.html" class="no-ch">Misión #07</a>
+</li>
+<li> <a href="../html/mision-08.html" class="no-ch">Misión #08</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/mision-09-parametros-estadisticos.html" class="daddy">Misión #09: Parámetros estadísticos</a>
+<ul class="other-section">
+<li> <a href="../html/media.html" class="no-ch">Media</a>
+</li>
+<li> <a href="../html/varianza-y-desviacion-tipica.html" class="no-ch">Varianza y Desviación típica</a>
+</li>
+<li> <a href="../html/coeficiente-de-variacion.html" class="no-ch">Coeficiente de Variación</a>
+</li>
+<li> <a href="../html/mision-10.html" class="no-ch">Misión #10</a>
+</li>
+<li> <a href="../html/mision-11.html" class="no-ch">Misión #11</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/mision-12-parametros-de-posicion-de-datos.html" class="daddy">Misión #12: Parámetros de posición de datos</a>
+<ul class="other-section">
+<li> <a href="../html/mediana.html" class="no-ch">Mediana</a>
+</li>
+<li> <a href="../html/cuartiles.html" class="no-ch">Cuartiles</a>
+</li>
+<li> <a href="../html/percentiles.html" class="no-ch">Percentiles</a>
+</li>
+<li> <a href="../html/mision-13.html" class="no-ch">Misión #13</a>
+</li>
+<li> <a href="../html/mision-14.html" class="no-ch">Misión #14</a>
+</li>
+<li> <a href="../html/mision-121-otros-parametros-de-posicion-de-datos-a.html" class="daddy">Misión #12.1  Otros parámetros de posición de datos agrupados</a>
+<ul class="other-section">
+<li> <a href="../html/poligono-de-frecuencias-acumuladas.html" class="no-ch">Polígono de frecuencias acumuladas</a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li> <a href="../html/mision-15-graficos-estadisticos.html" class="daddy">Misión #15: Gráficos estadísticos</a>
+<ul class="other-section">
+<li> <a href="../html/diagrama-de-barras.html" class="no-ch">Diagrama de barras</a>
+</li>
+<li> <a href="../html/histograma.html" class="no-ch">Histograma</a>
+</li>
+<li> <a href="../html/diagrama-de-sectores.html" class="no-ch">Diagrama de sectores</a>
+</li>
+<li> <a href="../html/diagrama-de-cajas-y-bigotes.html" class="no-ch">Diagrama de cajas y bigotes</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/mision-16.html" class="no-ch">Misión #16</a>
+</li>
+<li> <a href="../html/mision-17.html" class="no-ch">Misión #17</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/estadistica-bidimensional.html" class="daddy">Estadística bidimensional</a>
+<ul class="other-section">
+<li> <a href="../html/correlacion-lineal.html" class="no-ch">Correlación lineal</a>
+</li>
+<li> <a href="../html/parametros-asociados.html" class="daddy">Parámetros asociados</a>
+<ul class="other-section">
+<li> <a href="../html/centro-de-gravedad.html" class="no-ch">Centro de gravedad</a>
+</li>
+<li> <a href="../html/covarianza.html" class="no-ch">Covarianza</a>
+</li>
+<li> <a href="../html/coeficiente-de-correlacion-lineal.html" class="no-ch">Coeficiente de correlación lineal</a>
+</li>
+</ul>
+</li>
+<li class="current-page-parent"> <a href="../html/recta-de-regresion-lineal.html" class="daddy">Recta de regresión lineal</a>
+<ul class="other-section">
+<li class="active"> <a href="../html/hay-dos-rectas-de-regresion.html" class="active no-ch">Hay dos rectas de regresión</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/tablas-de-contingencia.html" class="no-ch">Tablas de contingencia</a>
+</li>
+</ul>
+</li>
+<li> <a href="../html/guia-didactica.html" class="daddy">Guía didáctica</a>
+<ul class="other-section">
+<li> <a href="../html/1-justificacion.html" class="no-ch">1. Justificación</a>
+</li>
+<li> <a href="../html/2-referencia-a-las-competencias-clave.html" class="no-ch">2. Referencia a las competencias clave</a>
+</li>
+<li> <a href="../html/3-referencia-curricular.html" class="no-ch">3. Referencia curricular</a>
+</li>
+<li> <a href="../html/4-guia-de-uso-para-el-aula.html" class="no-ch">4. Guía de uso para el aula</a>
+</li>
+</ul>
+</li>
+</ul>
+</nav><main id="page-mnwvomg6-m4dvxrcnk" class="page"> 
+<header class="main-header">
+<div class="package-header"><p class="package-title">El algoritmo de la felicidad</p>
+<p class="package-subtitle">Redes sociales vs Horas de sueño</p></div>
+<div class="page-header"><h1 class="page-title">Hay dos rectas de regresión</h1></div>
+</header><div id="page-content-page-mnwvomg6-m4dvxrcnk" class="page-content">
+<article id="block-mmufljn9-mbvccf3pl" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/objectives.png" alt="">
+</div>
+<h1 class="box-title">Definiciones</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mmufljn9-eg96xj7vb" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mmufljn9-eg96xj7vb&quot;}">
+<div class="exe-text-template">
+    <div class="exe-text-activity"><div style="font-family: 'Segoe UI', Roboto, sans-serif; border: 2px solid #405DE6; border-radius: 20px; overflow: hidden; background-color: #fff0f6; color: #0d1117; max-width: 850px; margin: 20px auto; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+<div style="background-color: #e1306c; padding: 20px; text-align: center; border-bottom: 1px solid #30363d;">
+<h3 style="color: white; margin: 0; font-size: 1.3em; text-transform: uppercase; letter-spacing: 2px;">📊 Rectas de regresión</h3>
+</div>
+<div style="display: flex; background-color: #ffe6f0; border-bottom: 2px solid #E1306C;"><button onclick="showLines('ySobreX')" class="btn-d" style="flex: 1; padding: 15px; font-weight: bold; font-size: 11pt; background: #E1306C; color: white; border: none; cursor: pointer;">Y sobre X</button> <button onclick="showLines('xSobreY')" class="btn-d" style="flex: 1; padding: 15px; font-weight: bold; font-size: 11pt; background: #ffe6f0; color: #e1306c; border-left: 1px solid #E1306C; border: none; cursor: pointer;">X sobre Y</button></div>
+<div style="padding: 30px; min-height: 220px;">
+<div id="ySobreX" class="d-content" style="display: block;">
+<div style="border-left: 4px solid #E1306C; background: #fff0f6; border-radius: 8px; padding: 20px;">
+<h4 style="color: #e1306c; margin-top: 0;">📈 Recta de regresión de Y sobre X</h4>
+<p style="font-size: 12pt; line-height: 1.6;">Minimiza la suma de los cuadrados de las diferencias de ordenadas $d_i$.</p>
+<div style="text-align: center; font-weight: bold; font-size: 1.2em; color: #e1306c;">$y = \overline{y} + \frac{\sigma_{xy}}{\sigma_x^2}(x - \overline{x})$</div>
+</div>
+</div>
+<div id="xSobreY" class="d-content" style="display: none;">
+<div style="border-left: 4px solid #405DE6; background: #e8f0ff; border-radius: 8px; padding: 20px;">
+<h4 style="color: #405de6; margin-top: 0;">📉 Recta de regresión de X sobre Y</h4>
+<p style="font-size: 12pt; line-height: 1.6;">Minimiza la suma de los cuadrados de las diferencias de abscisas $d'_i$.</p>
+<div style="text-align: center; font-weight: bold; font-size: 1.2em; color: #405de6;">$x = \overline{x} + \frac{\sigma_{xy}}{\sigma_y^2}(y - \overline{y})$</div>
+</div>
+</div>
+</div>
+</div>
+<p>
+<script>
+function showLines(id) {
+    var slides = document.getElementsByClassName("d-content");
+    for (var i=0;i<slides.length;i++){ slides[i].style.display="none"; }
+
+    var btns = document.getElementsByClassName("btn-d");
+    for (var i=0;i<btns.length;i++){ btns[i].style.background="#ffe6f0"; btns[i].style.color="#E1306C"; }
+
+    document.getElementById(id).style.display="block";
+    event.currentTarget.style.background="#E1306C";
+    event.currentTarget.style.color="white";
+}
+</script>
+</p><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbacktooglebutton" value="Gráficamente" data-text-a="Gráficamente" data-text-b="Gráficamente"></div><div class="feedback js-feedback js-hidden" style="display: none;"><p><br /></p>
+<p>     <strong> Recta de regresión de Y sobre X                                    Recta de regresión de X sobre Y</strong></p>
+<p><img src="../content/resources/di(YsobreX).png" width="276" height="212" alt="" />                              <img src="../content/resources/di(XsobreY).png" width="265" height="207" alt="" /></p></div></div>
+</div>
+</div>
+</div>
+</article><article id="block-mmufljn9-oj53oryj6" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/objectives.png" alt="">
+</div>
+<h1 class="box-title">Posiciones relativas de las dos rectas</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mmufljn9-pnb2qfh70" class="idevice_node text" data-idevice-path="../idevices/text/" data-idevice-type="text" data-idevice-component-type="json" data-idevice-json-data="{&quot;ideviceId&quot;:&quot;idevice-mmufljn9-pnb2qfh70&quot;}">
+<div class="exe-text-template">
+    <div class="exe-text-activity"><div style="font-family: 'Segoe UI', Roboto, sans-serif; border: 2px solid #405DE6; border-radius: 20px; overflow: hidden; background-color: #e8f0ff; color: #0d1117; max-width: 850px; margin: 20px auto; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+<div style="background-color: #405de6; padding: 20px; text-align: center; border-bottom: 1px solid #30363d;">
+<h3 style="color: white; margin: 0; font-size: 1.3em; text-transform: uppercase; letter-spacing: 2px;">📐 Clasificación de la correlación</h3>
+</div>
+<div style="display: flex; background-color: #dbe4ff; border-bottom: 2px solid #405DE6;"><button onclick="showCorr('casiNula')" class="btn-d" style="flex: 1; padding: 15px; font-weight: bold; font-size: 11pt; background: #405DE6; color: white; border: none; cursor: pointer;">Casi nula</button> <button onclick="showCorr('fuerte')" class="btn-d" style="flex: 1; padding: 15px; font-weight: bold; font-size: 11pt; background: #dbe4ff; color: #405de6; border-left: 1px solid #405DE6; cursor: pointer;">Fuerte</button> <button onclick="showCorr('perfecta')" class="btn-d" style="flex: 1; padding: 15px; font-weight: bold; font-size: 11pt; background: #dbe4ff; color: #405de6; border-left: 1px solid #405DE6; cursor: pointer;">Perfecta</button></div>
+<div style="padding: 30px; min-height: 180px;"><!-- Correlación casi nula -->
+<div id="casiNula" class="d-content" style="display: block;">
+<div style="border-left: 4px solid #FF9800; background: #fff8f0; border-radius: 8px; padding: 20px;">
+<h4 style="color: #ff9800; margin-top: 0;">📏 Correlación casi nula</h4>
+<p style="font-size: 12pt; line-height: 1.6;">($r \approx 0$): Las dos rectas forman un ángulo muy grande, próximo a <strong>90°</strong>.</p>
+</div>
+</div>
+<!-- Correlación fuerte -->
+<div id="fuerte" class="d-content" style="display: none;">
+<div style="border-left: 4px solid #E1306C; background: #fff0f6; border-radius: 8px; padding: 20px;">
+<h4 style="color: #e1306c; margin-top: 0;">📈 Correlación fuerte</h4>
+<p style="font-size: 12pt; line-height: 1.6;">El ángulo que forman las dos rectas es pequeño. La dependencia entre las variables es clara y consistente.</p>
+</div>
+</div>
+<!-- Correlación perfecta -->
+<div id="perfecta" class="d-content" style="display: none;">
+<div style="border-left: 4px solid #405DE6; background: #e8f0ff; border-radius: 8px; padding: 20px;">
+<h4 style="color: #405de6; margin-top: 0;">📐 Correlación perfecta</h4>
+<p style="font-size: 12pt; line-height: 1.6;">($|r| = 1$): Las dos rectas son coincidentes, indicando dependencia total entre las variables.</p>
+</div>
+</div>
+</div>
+</div>
+<p>
+<script>
+function showCorr(id){
+  var slides = document.getElementsByClassName("d-content");
+  for(var i=0;i<slides.length;i++){ slides[i].style.display="none"; }
+
+  var btns = document.getElementsByClassName("btn-d");
+  for(var i=0;i<btns.length;i++){ btns[i].style.background="#dbe4ff"; btns[i].style.color="#405DE6"; }
+
+  document.getElementById(id).style.display="block";
+  event.currentTarget.style.background="#405DE6";
+  event.currentTarget.style.color="white";
+}
+</script>
+</p><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbacktooglebutton" value="Gráficamente" data-text-a="Gráficamente" data-text-b="Gráficamente"></div><div class="feedback js-feedback js-hidden" style="display: none;"><p>          <strong>  Casi nula                                                  Fuerte                               </strong>                                    </p>
+<p><img src="../content/resources/r~0.png" width="241" height="158" alt="" title="Correlación casi nula" />    <img src="../content/resources/rFuerte.png" title="Correlación fuerte" width="242" height="162" alt="Correlación fuerte" />    </p>
+<p></p>
+<p>          <strong>    Perfecta  </strong>  </p>
+<p><img src="../content/resources/abs(r)=1.png" title="Correlación perfecta" width="203" height="165" alt="" /></p></div></div>
+</div>
+</div>
+</div>
+</article><article id="block-1774607572767-okr2iaxor" class="box">
+<header class="box-head">
+<div class="box-icon exe-icon">
+<img src="../theme/icons/book.png" alt="">
+</div>
+<h1 class="box-title">Caso práctico</h1>
+<button class="box-toggle box-toggle-on" title="Toggle content">
+<span>Toggle content</span>
+</button></header>
+<div class="box-content">
+<div id="idevice-mmufljn9-e4j6x4d04" class="idevice_node casestudy" data-idevice-path="../idevices/casestudy/" data-idevice-type="casestudy" data-idevice-component-type="json" data-idevice-json-data="{&quot;id&quot;:&quot;idevice-mmufljn9-e4j6x4d04&quot;,&quot;typeGame&quot;:&quot;Case study&quot;,&quot;history&quot;:&quot;&lt;p&gt;Usando de nuevo el mismo ejemplo, calcula ambas rectas (de $Y_1$ sobre $X_1$ y de $X_1$ sobre $Y_1$). &lt;br /&gt;&lt;/p&gt;&quot;,&quot;textInfoDurationInput&quot;:&quot;&quot;,&quot;textInfoDurationTextInput&quot;:&quot;&quot;,&quot;textInfoParticipantsInput&quot;:&quot;&quot;,&quot;textInfoParticipantsTextInput&quot;:&quot;&quot;,&quot;activities&quot;:[{&quot;activity&quot;:&quot;&lt;p&gt;Supongamos que queremos saber cuánto tiempo es probable que haya usado el móvil un alumno que informa que duerme exactamente 7 horas. ¿Sobre qué recta debo realizar la estimación?&lt;/p&gt;&quot;,&quot;feedback&quot;:&quot;&lt;p&gt;Ya sabemos la ecuación de la recta de regresión de $Y_1$ sobre  $X_1$:&lt;/p&gt;\n&lt;p&gt;y = 8.38 - 0.035x&lt;/p&gt;\n&lt;p&gt;Calculemos ahora la ecuación de la recta de regresión de $X_1$ sobre $Y_1$, que viene dada por:&lt;/p&gt;\n&lt;p&gt;$x = \\bar{x} + \\frac{\\sigma_{xy}}{\\sigma_y^2}(y - \\bar{y})$&lt;/p&gt;\n&lt;p&gt;Sustituyendo los datos que ya tenemos de actividades anteriores obtenemos:&lt;/p&gt;\n&lt;p&gt;$x = 48 + \\frac{-23.1}{0.93^2}(y - 6.7)$&lt;br /&gt;&lt;/p&gt;\n&lt;p&gt;$x = 48 - 26.73 (y - 6.7)$&lt;br /&gt;$x = 48 - 26.73y + 179.19$&lt;br /&gt;&lt;/p&gt;\n&lt;p&gt;$x = 227.19 - 26.73y$&lt;/p&gt;\n&lt;p&gt;Ahora podemos estimar del tiempo de uso del móvil para un alumno que duerme 7 horas:&lt;/p&gt;\n&lt;p&gt;$x(7) = 227.19 - 26.73 \\cdot 7$&lt;br /&gt;$x(7) \\approx 227.19 - 187.11$&lt;/p&gt;\n&lt;p&gt;$x(7) \\approx 40.08$&lt;/p&gt;\n&lt;p&gt;Conclusión: Un alumno que duerme 7 horas probablemente haya usado el móvil alrededor de 40 minutos antes de dormir.&lt;/p&gt;&quot;,&quot;buttonCaption&quot;:&quot;respuesta&quot;}]}" data-idevice-template="casestudy.html">
+<div class="exe-casestudy-container">
+  
+        <div class="caseStudyContent">            
+            <div class="CSP-Info mb-3">
+                
+            <dl>
+                <div class="inline"><dt><span title=""></span></dt><dd></dd></div>
+                <div class="inline"><dt><span title=""></span></dt><dd></dd></div>
+            </dl>
+            </div>
+            <div class="CSP-History mb-3" >
+                <p>Usando de nuevo el mismo ejemplo, calcula ambas rectas (de $Y_1$ sobre $X_1$ y de $X_1$ sobre $Y_1$). <br /></p>
+            </div>
+            <div class="CSP-Activities mb-3">
+                
+                <div class="CSP-ActivityDiv ">
+                    <div class="CSP-Activity mb-3">
+                        <p>Supongamos que queremos saber cuánto tiempo es probable que haya usado el móvil un alumno que informa que duerme exactamente 7 horas. ¿Sobre qué recta debo realizar la estimación?</p>
+                    </div>
+                    
+                    <div class="iDevice_buttons feedback-button js-required">
+                        <input type="button" class="CSP-FeedbackBtn feedbacktooglebutton" value="respuesta">
+                    </div>
+                    <div class="CSP-FeedbackText feedback js-feedback js-hidden" style="display: none;">
+                        <p>Ya sabemos la ecuación de la recta de regresión de $Y_1$ sobre  $X_1$:</p>
+<p>y = 8.38 - 0.035x</p>
+<p>Calculemos ahora la ecuación de la recta de regresión de $X_1$ sobre $Y_1$, que viene dada por:</p>
+<p>$x = \bar{x} + \frac{\sigma_{xy}}{\sigma_y^2}(y - \bar{y})$</p>
+<p>Sustituyendo los datos que ya tenemos de actividades anteriores obtenemos:</p>
+<p>$x = 48 + \frac{-23.1}{0.93^2}(y - 6.7)$<br /></p>
+<p>$x = 48 - 26.73 (y - 6.7)$<br />$x = 48 - 26.73y + 179.19$<br /></p>
+<p>$x = 227.19 - 26.73y$</p>
+<p>Ahora podemos estimar del tiempo de uso del móvil para un alumno que duerme 7 horas:</p>
+<p>$x(7) = 227.19 - 26.73 \cdot 7$<br />$x(7) \approx 227.19 - 187.11$</p>
+<p>$x(7) \approx 40.08$</p>
+<p>Conclusión: Un alumno que duerme 7 horas probablemente haya usado el móvil alrededor de 40 minutos antes de dormir.</p>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    
+</div>
+
+</div>
+</div>
+</article>
+</div></main><div class="nav-buttons">
+<a href="../html/recta-de-regresion-lineal.html" title="Anterior" class="nav-button nav-button-left"><span>Anterior</span></a>
+<a href="../html/tablas-de-contingencia.html" title="Siguiente" class="nav-button nav-button-right"><span>Siguiente</span></a>
+</div>
+<footer id="siteFooter"><div id="siteFooterContent"> <div id="packageLicense" class="cc cc-by-sa"> <p> <span class="license-label">Licencia: </span><a href="https://creativecommons.org/licenses/by-sa/4.0/" class="license">creative commons: attribution - share alike 4.0 (BY-SA)</a></p>
+</div>
+<div id="siteUserFooter"> <div><script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script></div>
+</div></div></footer>
+</div>
+<p id="made-with-eXe"> <a href="https://exelearning.net/" target="_blank" rel="noopener"> <span>Creado con eXeLearning <span>(nueva ventana)</span></span></a></p>
+</body>
+</html>
